@@ -2,29 +2,31 @@
 <html lang="ko">
 @@include('./include/head.html')
 <body class="front_body">
-	<div class="page_wrap">
+	<div class="page_wrap main">
         <header class="header_wrap">
             <hgroup class="hgroup_pix">
-                <h1 class="toplogo"><a href="#" class="toplogo_link"><img src="./assets/images/toplogo.png" alt="크립토 페이 JAPAN"></a></h1>
-                <nav class="nav_list_wrap">
-                    <ul class="nav_list">                                         
-                        <li><a href="#" class="nav_menu">내지갑</a>
-                        <li><a href="#" class="nav_menu">카드</a>
-                        <li><a href="#" class="nav_menu">충전신청</a>
-                        <li><a href="#" class="nav_menu">선물하기</a>
-                        <li><a href="#" class="nav_menu">공유센터</a>
-                    </ul>
-                </nav>
-                <div class="hgroup_util_wrap">
-                    <ul class="hgroup_util_list">
-                        <li><a href="#" class="hgroup_util_item"><i class="ico_nation"></i><span class="hgroup_util_text">ENG</span></a></li>
-                    </ul>
-                    <a href="#" class="btn_hgroup_menu">
-                        <span class="hgroup_menu_inner"></span>
-                    </a>
-                    <a href="#" class="btn_mb_menu">
-                        <span class="mb_menu_inner"></span>
-                    </a>
+                <div class="hgroup_pix_inner">
+                    <h1 class="toplogo"><a href="#" class="toplogo_link"><img src="./assets/images/toplogo.png" alt="크립토 페이 JAPAN"></a></h1>
+                    <nav class="nav_list_wrap">
+                        <ul class="nav_list">                                         
+                            <li><a href="#" class="nav_menu">내지갑</a>
+                            <li><a href="#" class="nav_menu">카드</a>
+                            <li><a href="#" class="nav_menu">충전신청</a>
+                            <li><a href="#" class="nav_menu">선물하기</a>
+                            <li><a href="#" class="nav_menu">공유센터</a>
+                        </ul>
+                    </nav>
+                    <div class="hgroup_util_wrap">
+                        <ul class="hgroup_util_list">
+                            <li><a href="#" class="hgroup_util_item"><i class="ico_nation"></i><span class="hgroup_util_text">ENG</span></a></li>
+                        </ul>
+                        <a href="#" class="btn_hgroup_menu">
+                            <span class="hgroup_menu_inner"></span>
+                        </a>
+                        <a href="#" class="btn_mb_menu">
+                            <span class="mb_menu_inner"></span>
+                        </a>
+                    </div>
                 </div>
             </hgroup>
             <!-- mobile -->
@@ -47,6 +49,7 @@
                 <div class="visual_wallet_row">
                     <div class="visual_wallet_item">
                         <span class="visual_wallet_handle"></span>
+                        <div class="wallet_stoke"></div>
                         <div class="visual_wallet_inner">
                             <div class="wallet_profile_main_cols">
                                 <div class="wallet_profile_item">
@@ -233,6 +236,11 @@
                 </div>
             </div>
         </section>
+        <script>
+            window.addEventListener("load", () => {
+                getpayBoxFunc();
+            });
+        </script>
         <footer class="footer_wrap">
             <div class="footer_pix">
                 <div class="footer_item_group">
