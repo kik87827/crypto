@@ -962,7 +962,6 @@ input:-webkit-autofill {
 .wallet_profile_para {
   font-size: 14px;
   display: flex;
-  flex-wrap: wrap;
   gap: 7px;
   color: #ffffff;
   margin-top: 18px;
@@ -1436,9 +1435,13 @@ input:-webkit-autofill {
   .wallet_profile_spec_sub {
     font-size: 13px;
   }
+  .wallet_profile_main_cols {
+    padding-right: 50px;
+  }
   .wallet_profile_sub_cols {
     min-width: 0;
     margin-top: 20px;
+    position: static;
   }
   .wallet_tail_table {
     font-size: 14px;
@@ -1461,10 +1464,11 @@ input:-webkit-autofill {
   }
   .wallet_profile_para {
     margin-top: 10px;
+    /* &:before{top:1px;} */
   }
   .btn_more {
-    top: -10px;
-    right: 0;
+    top: 36px;
+    right: 26px;
   }
   .content_wrap {
     margin: 35px auto 60px;
@@ -1643,6 +1647,14 @@ input:-webkit-autofill {
   }
   .window .btn_linkbox {
     padding-bottom: 10px;
+  }
+}
+@media (max-width: 359px) {
+  .wallet_profile_spec_main {
+    font-size: 15px;
+  }
+  .btn_more {
+    top: 35px;
   }
 }
 /*# sourceMappingURL=style.css.map */
