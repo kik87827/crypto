@@ -29,7 +29,7 @@
 }
 .hgroup_util_item{
     display:flex;align-items:center;white-space:nowrap;gap:7px; border:1px solid #d0d0d0;padding:7px 14px;border-radius:100px;
-    .ico_nation{display:block;width:19px;height:13px;background:url("../images/nation_obj_usa.png") no-repeat 0 0/100% auto; flex:0 0 19px;}
+    .ico_nation{display:block;width:19px;height:13px;flex:0 0 19px;position:relative;}
     .hgroup_util_text{font-size:13px;color:#333333;display:inline-block;line-height:1;position:relative;top:-1px;}
 }
 .btn_hgroup_menu{
