@@ -132,10 +132,10 @@
     font-size:18px; font-weight:500; display:flex;align-items: center; gap:10px;
 }
 .ico_getpay{
-    display:block;width:36px;height:36px;flex:0 0 36px;background:url("../images/ico_main_tail.png") no-repeat 0 0/100% auto;flex:0 0 36px;
-    &.ico_change{background-position:0 0;}
+    display:block;width:36px;height:36px;flex:0 0 36px;/* background:url("../images/ico_main_tail.png") no-repeat 0 0/100% auto; */flex:0 0 36px; position:relative;
+    /* &.ico_change{background-position:0 0;}
     &.ico_present{background-position:0 50%;}
-    &.ico_charge{background-position:0 100%;}
+    &.ico_charge{background-position:0 100%;} */
 }
 .getpay_detail_title_text{}
 .getpay_detail_else{
