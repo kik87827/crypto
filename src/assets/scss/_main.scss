@@ -78,11 +78,12 @@
 .getboard_box_content_else{flex:0;white-space: nowrap;display:flex;justify-content: flex-end;position:relative;font-size:14px;color:#6d6c6c;}
 .window .getboard_box_content_else{top:-1px;}
 .btn_ico_more{
-    display:block;width:30px;height:30px;position:absolute;top:30px;right:25px;
-    &:before,
+    display:flex;align-items:center;justify-content:center;width:30px;height:30px;position:absolute;top:30px;right:25px;font-size:0;line-height:0;
+    /* &:before,
     &:after{display:block;content:'';width:10px;height:2px;background:#000;position:absolute;top:50%;left:50%;}
     &:before{transform:translate(-50%,-50%);}
-    &:after{transform:translate(-50%,-50%) rotate(90deg);}
+    &:after{transform:translate(-50%,-50%) rotate(90deg);} */
+    img{max-width:10px}
 }
 
 .getpay_box_cols{
@@ -108,7 +109,7 @@
     // &:before{display:block;content:'';}
 }
 .getpay_title_ico{
-    display:block;width:44px;height:44px;flex:0 0 44px;background:url("../images/ico_dollar.png") no-repeat 50% 50%/100% auto;border:3px solid #fff;border-radius:100%;
+    width:44px;height:44px;flex:0 0 44px;border:3px solid #fff;border-radius:100%;
 }
 .getpay_title_text,
 .getpay_title_sub{color:#fff;line-height:1;font-weight:700;position:relative;}
