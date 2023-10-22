@@ -209,10 +209,10 @@
 										<th><span class="form_label">여권앞면사진</span></th>
 										<td>
 											<div class="form_inline_wrap">
-												<div class="form_inline_cols long_type"><input type="text" class="form_input" value=""></div>
+												<div class="form_inline_cols long_type"><input type="text" class="form_input" id="file_input" value=""></div>
 												<div class="form_inline_cols short_type">
 													<div class="fileupload_item">
-														<input type="file" class="file_origin">
+														<input type="file" class="file_origin" id="file_origin">
 														<a href="#" class="btn_inline_box">파일업로드</a>
 													</div>
 												</div>
@@ -234,6 +234,11 @@
 			</div>
 			<!-- // sub contents -->
 		</section>
+		<script>
+			document.querySelector("#file_origin").addEventListener("change", (e) => {
+				document.querySelector("#file_input").value = e.currentTarget.value
+			})
+		</script>
 		<footer class="footer_wrap">
 			<div class="footer_pix">
 				<div class="footer_item_group">

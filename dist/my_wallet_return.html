@@ -145,8 +145,8 @@
 							</div>
 						</div>
 						<div class="both_rendar_box_cols">
-							<div class="rendar_bar_wrap type2">
-								<div class="rendar_bar_item">
+							<div class="rendar_bar_wrap">
+								<div class="rendar_bar_item type2">
 									<div class="rendar_bar_key_cols">
 										<i class="rendar_bar_ico"><img src="./assets/images/ico_dollar.png" class="ico_img" alt=""></i>
 										<span class="rendar_bar_text">USDT</span>
@@ -182,6 +182,11 @@
 			</div>
 			<!-- // sub contents -->
 		</section>
+		<script>
+			window.addEventListener("load", () => {
+				maxHeightFunc([".rendar_bar_wrap .rendar_bar_value", ".rendar_fieldset_row"]);
+			});
+		</script>
 		<footer class="footer_wrap">
 			<div class="footer_pix">
 				<div class="footer_item_group">
