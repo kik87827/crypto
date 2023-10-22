@@ -64,6 +64,8 @@ function layoutFunc() {
 
   mbTotal();
   action();
+  mapMenu();
+
   resizeAction(() => {
     action();
   })
@@ -238,15 +240,7 @@ function layoutFunc() {
 
     });
   }
-  // subminheight
-  function subMinHeight() {
-    action();
-    window.addEventListener("resize", function() {
-      action();
-    }, false);
 
-    function action() {}
-  }
 }
 
 /**
