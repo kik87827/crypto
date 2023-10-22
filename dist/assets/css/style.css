@@ -2487,6 +2487,9 @@ select.form_select.ready_select {
   .both_flex_form_cols {
     padding: 0.9375rem 0;
   }
+  .getpay_flex_box {
+    display: block;
+  }
 }
 @media (max-width: 359px) {
   .step_process_bullet,
