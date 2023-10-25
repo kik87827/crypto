@@ -331,7 +331,7 @@ select.form_select{color:#333;font-size:rem(16);border:1px solid #cccccc;height:
     &.define_message{text-align: center;padding:rem(20)}
     &:last-of-type{border-bottom:0;}
 
-    .form_fieldset_table_wrap{max-width:rem(665); margin:0 auto; padding:0 rem(30)}
+    .form_fieldset_table_wrap{/* max-width:rem(665); margin:0 auto;  */}
 }
 .form_bottom_message{font-size:rem(14);color:#6d6c6c;}
 .step_process_box{
@@ -393,7 +393,7 @@ select.form_select{color:#333;font-size:rem(16);border:1px solid #cccccc;height:
     .ico_form{width:rem(92);height:rem(92);border:1px solid #cccccc;border-radius:100%;}
 }
 .both_flex_form_cols{
-    flex:1; min-width:0; padding:0 17.67676767676768%;
+    flex:1; min-width:0; padding:0 5%;
 }   
 
 

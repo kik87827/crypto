@@ -2276,11 +2276,7 @@ select.form_select.ready_select {
 .form_vitem_row:last-of-type {
   border-bottom: 0;
 }
-.form_vitem_row .form_fieldset_table_wrap {
-  max-width: 41.5625rem;
-  margin: 0 auto;
-  padding: 0 1.875rem;
-}
+.form_vitem_row .form_fieldset_table_wrap { /* max-width:rem(665); margin:0 auto;  */ }
 
 .form_bottom_message {
   font-size: 0.875rem;
@@ -2410,7 +2406,7 @@ select.form_select.ready_select {
 .both_flex_form_cols {
   flex: 1;
   min-width: 0;
-  padding: 0 17.6767676768%;
+  padding: 0 5%;
 }
 
 /* sub */
