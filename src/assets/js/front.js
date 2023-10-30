@@ -664,3 +664,14 @@ function maxHeightFunc(targetGroup){
     }
   }
 }
+
+
+function toggleListFunc(){
+  const board_toggle_bar = document.querySelectorAll(".board_toggle_bar");
+  board_toggle_bar.forEach((item) => {
+    item.addEventListener("click",(e)=>{
+      e.preventDefault();
+      e.currentTarget.closest(".board_toggle_item").classList.toggle("active");
+    });
+  });
+}
