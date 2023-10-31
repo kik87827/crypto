@@ -45,8 +45,8 @@
 }
 
 .btn_more{
-    display:inline-block;color:#999;font-size:rem(12);line-height:1;padding-right:rem(13);position:absolute;top:rem(-10);right:rem(-5);
-    &:after{display:block;content:'';width:rem(7);height:rem(7);border-right:rem(1) solid #999;border-top:rem(1) solid #999;transform: rotate(45deg);position:absolute;top:rem(2);right:rem(2);}
+    display:inline-block;color:#fff;font-size:rem(12);line-height:1;padding-right:rem(13);position:absolute;top:rem(-10);right:rem(-5);
+    &:after{display:block;content:'';width:rem(7);height:rem(7);border-right:rem(1) solid #fff;border-top:rem(1) solid #fff;transform: rotate(45deg);position:absolute;top:rem(2);right:rem(2);}
 }
 
 .content_wrap{

@@ -351,45 +351,50 @@ input.btn_submitbox{}
 
 /* pagination */
 .pagination {text-align: center;line-height:0;font-size:0; padding:0 0 0;margin:rem(40) 0 rem(30);clear:both;}
-.paginate_button{display:inline-block;}
-.paginate_button > a{display: inline-block;margin:0 rem(2);position:relative; width: rem(30);height: rem(30);border:rem(1) solid #e3e3e3;border-radius:100%;background: #fff;line-height: rem(28);font-size:rem(16);white-space:nowrap;vertical-align: top;text-align: center;color:#6d6c6c;}
-.paginate_button > a:hover,
-.paginate_button.active > a{border-color: #122232;color:#fff;background-color:#122232;}
-.paginate_button.previous a:after, 
-.paginate_button.next a:after{display: inline-block;content: '';margin:11px 0 0 0;width: 6px;height: 6px;border-bottom: rem(1) solid #000;border-left: rem(1) solid #000;}
-.paginate_button.previous a:after {transform:rotate(45deg);-ms-transform:rotate(45deg);-webkit-transform:rotate(45deg);}
-.paginate_button.next a:after{transform:rotate(-135deg);-ms-transform:rotate(-135deg);-webkit-transform:rotate(-135deg);}
-.paginate_button.previous a,
-.paginate_button.next a{overflow: hidden;border:rem(1) solid #d9d9d9;font-size: 0;color:#fff;line-height: 0;}
-.paginate_button.previous a:hover,
-.paginate_button.next a:hover{border-color: #122232;}
-.paginate_button.previous a:hover:after,
-.paginate_button.next a:hover:after{border-color: #fff;}
-.paginate_button.next a:after{position:relative;left:-2px;}
-.paginate_button.previous{margin-right: 15px;}
-.paginate_button.next{margin-left: 15px;}
-.paginate_button.previous a:after{margin-left: 3px}
-.paginate_button.next a:after{margin-right: 0px}
+.paginate_button{display:inline-block;
+     > a{display: inline-block;margin:0 rem(5); font-weight:500; position:relative; width: rem(38);height: rem(38);border:rem(1) solid #dadada;border-radius:100%;background: #fff;line-height: rem(36);font-size:rem(16);white-space:nowrap;vertical-align: top;text-align: center;color:#6d6c6c;}
+     > a:hover,
+     &.active > a{border-color: #122232;color:#fff;background-color:#122232;}
+     &.previous a:after, 
+     &.next a:after{display: inline-block;content: '';margin:rem(15) 0 0 0;width: rem(6);height: rem(6);border-bottom: rem(1) solid #000;border-left: rem(1) solid #000;}
+     &.previous a:after {transform:rotate(45deg);-ms-transform:rotate(45deg);-webkit-transform:rotate(45deg);}
+     &.next a:after{transform:rotate(-135deg);-ms-transform:rotate(-135deg);-webkit-transform:rotate(-135deg);}
+     &.previous a,
+     &.next a{overflow: hidden;border:rem(1) solid #d9d9d9;font-size: 0;color:#fff;line-height: 0;}
+     &.previous a:hover,
+     &.next a:hover{border-color: #122232;}
+     &.previous a:hover:after,
+     &.next a:hover:after{border-color: #fff;}
+     &.next a:after{position:relative;left:rem(-2);}
+     &.previous{margin-right: rem(10);}
+     &.next{margin-left: rem(10);}
+     &.previous a:after{margin-left: rem(3)}
+     &.next a:after{margin-right: 0}
+}
+
 @media (max-width: 767px) {
 	.pagination{margin:rem(30) 0 rem(10);padding:0}
-	.paginate_button a {width: rem(26);height: rem(26);font-size:rem(13);line-height: rem(26);margin:0 rem(1);}
-    .paginate_button.previous a:after, 
-    .paginate_button.next a:after{margin-top: rem(9);}
-	.paginate_button.previous{margin: 0 rem(3) 0 0;}
-	.paginate_button.next{margin:0 rem(1) 0 rem(3);}
-    .paginate_button.next a:after{left:rem(-1);}
-    .paginate_button.previous a:after{margin-left:rem(3);}
+    .paginate_button{
+        a {width: rem(26);height: rem(26);font-size:rem(13);line-height: rem(26);margin:0 rem(1);}
+        &.previous a:after, 
+        &.next a:after{margin-top: rem(9);}
+        &.previous{margin: 0 rem(3) 0 0;}
+        &.next{margin:0 rem(1) 0 rem(3);}
+        &.next a:after{left:rem(-3);}
+        &.previous a:after{margin-left:rem(3);}
+    }
     .subcontent_box .pagination{margin-left:rem(-15);margin-right:rem(-15);}
     .ico_copy_obj::before{width:rem(60);height:rem(60);margin-bottom:rem(10)}
 }
 @media (max-width: 359px) {
 	
-
-	.paginate_button a {width: rem(22);height: rem(22);font-size:rem(12);line-height: rem(22);margin:0 rem(1);}
-    .paginate_button.previous a:after, 
-    .paginate_button.next a:after{margin-top:rem(7);}
-	.paginate_button.previous{margin: 0 rem(1) 0 rem(1);}
-	.paginate_button.next{margin:0 rem(1) 0 rem(1);}
+    .paginate_button{
+         a {width: rem(22);height: rem(22);font-size:rem(12);line-height: rem(22);margin:0 rem(1);}
+        &.previous a:after, 
+        &.next a:after{margin-top:rem(7);}
+        &.previous{margin: 0 rem(1) 0 rem(1);}
+        &.next{margin:0 rem(1) 0 rem(1);}
+    }
 }
 @media (max-width: 319px) {
     .subcontent_box .pagination{margin-left:rem(-20);margin-right:rem(-20);}
@@ -503,7 +508,7 @@ select.form_select{color:#333;font-size:rem(16);border:1px solid #cccccc;height:
     display:flex;justify-content:center;gap:rem(7);align-items:center;min-height:rem(30);
     .ico_request{flex:0 0 rem(30);height:rem(30);border-radius:100%;background-color:#fff;}
 }
-.btn_submit_box_text{color:#fff;font-size:rem(20);font-weight:500;display:inline-block;line-height:1;}
+.btn_submit_box_text{color:#fff;font-size:rem(20);/* font-weight:500; */display:inline-block;line-height:1;}
 .form_bottom_message{}
 
 .rendar_bar_wrap{
@@ -580,7 +585,22 @@ select.form_select{color:#333;font-size:rem(16);border:1px solid #cccccc;height:
 .both_rendar_box_cols{
     flex:1;min-width:0;
     &:last-of-type{}
-    .rendar_bar_wrap{margin-bottom:rem(36);}
+    .rendar_bar_wrap{margin-bottom:rem(36);
+        &.type2{
+            .rendar_bar_item{
+                background-image:url("../images/bg_databar_sky.png");
+            } 
+        }
+    }
+    .rendar_bar_item{
+        &.type2{
+            background-image:url("../images/bg_databar_sky.png");
+        }
+    } 
+    .rendar_bar_item{
+        background-image:url("../images/bg_databar_blue.png");
+        
+    }
 }
 .rendar_fieldset_row{background:#f8faff;border:1px solid #dadfeb;border-radius:rem(12);padding:rem(25) rem(30);box-sizing: border-box;}
 .rendar_fieldset_title_row{margin-bottom:rem(18);}

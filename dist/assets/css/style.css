@@ -398,8 +398,16 @@ body ::-webkit-scrollbar-track {
   z-index: 50;
   height: 6.0625rem;
   box-sizing: border-box;
-  border-bottom: 0.0625rem solid #ccc;
   flex: 0 0 6.0625rem;
+}
+.header_wrap:before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  background: #ccc;
 }
 
 .hgroup_pix {
@@ -445,14 +453,34 @@ body ::-webkit-scrollbar-track {
 .nav_list {
   display: flex;
   height: 100%;
-  align-items: center;
   justify-content: center;
   gap: 5rem;
 }
+.nav_list > li {
+  display: flex;
+}
 .nav_menu {
-  display: inline-block;
+  display: flex;
   font-size: 1.1875rem;
   font-weight: 500;
+  align-items: center;
+  position: relative;
+}
+.nav_menu:after {
+  display: block;
+  content: "";
+  width: calc(100% + 3.75rem);
+  position: absolute;
+  bottom: 0;
+  left: -1.875rem;
+  background: #000;
+  height: 0;
+  opacity: 0;
+  transition: 0.4s;
+}
+.nav_menu:hover:after {
+  opacity: 1;
+  height: 0.125rem;
 }
 
 .hgroup_util_wrap {
@@ -899,7 +927,7 @@ body ::-webkit-scrollbar-track {
   position: relative;
   overflow: hidden;
   border-radius: 1.125rem 1.125rem 0 0;
-  background: url("../images/bg_wallet.png") no-repeat 50% 50%/cover;
+  background: url("../images/bg_mywallet.png") no-repeat 50% 50%/cover;
   text-align: center;
   min-height: 8.5rem;
   padding: 1.25rem;
@@ -1125,11 +1153,10 @@ body ::-webkit-scrollbar-track {
 .nav_depth_list_wrap {
   background: #fff;
   position: absolute;
-  top: calc(100% - 1px);
+  top: 100%;
   left: 0;
   border-bottom: 1px solid #e7e7e7;
   width: 100%;
-  border-top: 1px solid #cccccc;
   display: none;
 }
 .nav_depth_list_wrap.active {
@@ -1159,12 +1186,16 @@ body ::-webkit-scrollbar-track {
   display: inline-block;
   font-weight: 500;
 }
+.nav_depth_one:hover {
+  font-weight: 700;
+  letter-spacing: -0.25px;
+}
 
 .nav_depth_two_list {
   margin-top: 1.875rem;
 }
 .nav_depth_two_list > li {
-  margin-bottom: 1.75rem;
+  margin-bottom: 1.5625rem;
 }
 .nav_depth_two_list > li:last-of-type {
   margin-bottom: 0;
@@ -1173,8 +1204,12 @@ body ::-webkit-scrollbar-track {
 .nav_depth_two {
   font-size: 1rem;
   color: #4e4e4e;
-  line-height: 1;
+  line-height: 1.4;
   display: inline-block;
+  border-bottom: 1px solid transparent;
+}
+.nav_depth_two:hover {
+  border-bottom-color: #6c6c6c;
 }
 
 .nav_else_list {
@@ -1194,6 +1229,10 @@ body ::-webkit-scrollbar-track {
   font-size: 1rem;
   color: #333333;
   font-weight: 500;
+}
+.nav_else_item:hover {
+  font-weight: 700;
+  letter-spacing: -0.25px;
 }
 
 @media (max-width: 1500px) {
@@ -1263,6 +1302,20 @@ body ::-webkit-scrollbar-track {
   .submenu_item.break_type {
     flex: 0 0 100%;
     box-sizing: border-box;
+    margin-bottom: 5px;
+  }
+  .submenu_item.break_type:before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.12);
+    position: absolute;
+    top: -0.375rem;
+    left: 0;
+  }
+  .submenu_item.break_type .submenu_two_list_wrap {
+    top: calc(100% - 0.3125rem);
   }
   .submenu_text {
     font-size: 0.8125rem;
@@ -1279,7 +1332,7 @@ body ::-webkit-scrollbar-track {
     transform: translateZ(0) translateY(-50%) rotate(45deg);
   }
   .submenu_two_list_wrap {
-    top: calc(100% - 0.3125rem);
+    top: calc(100% - 0.375rem);
   }
   .submenu_two_list {
     padding-top: 0.625rem;
@@ -2470,92 +2523,75 @@ html.smooth {
 .paginate_button {
   display: inline-block;
 }
-
 .paginate_button > a {
   display: inline-block;
-  margin: 0 0.125rem;
+  margin: 0 0.3125rem;
+  font-weight: 500;
   position: relative;
-  width: 1.875rem;
-  height: 1.875rem;
-  border: 0.0625rem solid #e3e3e3;
+  width: 2.375rem;
+  height: 2.375rem;
+  border: 0.0625rem solid #dadada;
   border-radius: 100%;
   background: #fff;
-  line-height: 1.75rem;
+  line-height: 2.25rem;
   font-size: 1rem;
   white-space: nowrap;
   vertical-align: top;
   text-align: center;
   color: #6d6c6c;
 }
-
-.paginate_button > a:hover,
-.paginate_button.active > a {
+.paginate_button > a:hover, .paginate_button.active > a {
   border-color: #122232;
   color: #fff;
   background-color: #122232;
 }
-
-.paginate_button.previous a:after,
-.paginate_button.next a:after {
+.paginate_button.previous a:after, .paginate_button.next a:after {
   display: inline-block;
   content: "";
-  margin: 11px 0 0 0;
-  width: 6px;
-  height: 6px;
+  margin: 0.9375rem 0 0 0;
+  width: 0.375rem;
+  height: 0.375rem;
   border-bottom: 0.0625rem solid #000;
   border-left: 0.0625rem solid #000;
 }
-
 .paginate_button.previous a:after {
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
-
 .paginate_button.next a:after {
   transform: rotate(-135deg);
   -ms-transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
 }
-
-.paginate_button.previous a,
-.paginate_button.next a {
+.paginate_button.previous a, .paginate_button.next a {
   overflow: hidden;
   border: 0.0625rem solid #d9d9d9;
   font-size: 0;
   color: #fff;
   line-height: 0;
 }
-
-.paginate_button.previous a:hover,
-.paginate_button.next a:hover {
+.paginate_button.previous a:hover, .paginate_button.next a:hover {
   border-color: #122232;
 }
-
-.paginate_button.previous a:hover:after,
-.paginate_button.next a:hover:after {
+.paginate_button.previous a:hover:after, .paginate_button.next a:hover:after {
   border-color: #fff;
 }
-
 .paginate_button.next a:after {
   position: relative;
-  left: -2px;
+  left: -0.125rem;
 }
-
 .paginate_button.previous {
-  margin-right: 15px;
+  margin-right: 0.625rem;
 }
-
 .paginate_button.next {
-  margin-left: 15px;
+  margin-left: 0.625rem;
 }
-
 .paginate_button.previous a:after {
-  margin-left: 3px;
+  margin-left: 0.1875rem;
 }
-
 .paginate_button.next a:after {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 @media (max-width: 767px) {
@@ -2570,8 +2606,7 @@ html.smooth {
     line-height: 1.625rem;
     margin: 0 0.0625rem;
   }
-  .paginate_button.previous a:after,
-.paginate_button.next a:after {
+  .paginate_button.previous a:after, .paginate_button.next a:after {
     margin-top: 0.5625rem;
   }
   .paginate_button.previous {
@@ -2581,7 +2616,7 @@ html.smooth {
     margin: 0 0.0625rem 0 0.1875rem;
   }
   .paginate_button.next a:after {
-    left: -0.0625rem;
+    left: -0.1875rem;
   }
   .paginate_button.previous a:after {
     margin-left: 0.1875rem;
@@ -2604,8 +2639,7 @@ html.smooth {
     line-height: 1.375rem;
     margin: 0 0.0625rem;
   }
-  .paginate_button.previous a:after,
-.paginate_button.next a:after {
+  .paginate_button.previous a:after, .paginate_button.next a:after {
     margin-top: 0.4375rem;
   }
   .paginate_button.previous {
@@ -2886,8 +2920,7 @@ select.form_select.ready_select {
 
 .btn_submit_box_text {
   color: #fff;
-  font-size: 1.25rem;
-  font-weight: 500;
+  font-size: 1.25rem; /* font-weight:500; */
   display: inline-block;
   line-height: 1;
 }
@@ -3055,6 +3088,15 @@ select.form_select.ready_select {
 }
 .both_rendar_box_cols .rendar_bar_wrap {
   margin-bottom: 2.25rem;
+}
+.both_rendar_box_cols .rendar_bar_wrap.type2 .rendar_bar_item {
+  background-image: url("../images/bg_databar_sky.png");
+}
+.both_rendar_box_cols .rendar_bar_item.type2 {
+  background-image: url("../images/bg_databar_sky.png");
+}
+.both_rendar_box_cols .rendar_bar_item {
+  background-image: url("../images/bg_databar_blue.png");
 }
 
 .rendar_fieldset_row {
@@ -4899,7 +4941,7 @@ input.sform_input {
 
 .btn_more {
   display: inline-block;
-  color: #999;
+  color: #fff;
   font-size: 0.75rem;
   line-height: 1;
   padding-right: 0.8125rem;
@@ -4912,8 +4954,8 @@ input.sform_input {
   content: "";
   width: 0.4375rem;
   height: 0.4375rem;
-  border-right: 0.0625rem solid #999;
-  border-top: 0.0625rem solid #999;
+  border-right: 0.0625rem solid #fff;
+  border-top: 0.0625rem solid #fff;
   transform: rotate(45deg);
   position: absolute;
   top: 0.125rem;
