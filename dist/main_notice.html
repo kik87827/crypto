@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;  charset=utf-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="./assets/css/style.css" rel="stylesheet">
+	<script src="./assets/js/dynamicListener.min.js"></script>
+	<script src="./assets/js/jquery-3.4.1.min.js"></script>
+	<script src="./assets/js/front.js"></script>
+	<title></title>
+</head>
+
+<body class="front_body">
+	<div class="page_wrap main">
+		<header class="header_wrap">
+			<hgroup class="hgroup_pix">
+				<div class="hgroup_pix_inner">
+					<h1 class="toplogo"><a href="#" class="toplogo_link"><img src="./assets/images/toplogo.png" alt="크립토 페이 JAPAN"></a></h1>
+					<nav class="nav_list_wrap">
+						<ul class="nav_list">
+							<li><a href="#" class="nav_menu">내지갑</a>
+							<li><a href="#" class="nav_menu">카드</a>
+							<li><a href="#" class="nav_menu">충전 신청</a>
+							<li><a href="#" class="nav_menu">선물하기</a>
+							<li><a href="#" class="nav_menu">공유센터</a>
+						</ul>
+					</nav>
+					<div class="hgroup_util_wrap">
+						<ul class="hgroup_util_list">
+							<li>
+								<a href="#" class="hgroup_util_item">
+									<i class="ico_nation"><img src="./assets/images/nation_obj_usa.png" class="ico_img" alt=""></i>
+									<span class="hgroup_util_text">ENG</span>
+								</a>
+							</li>
+						</ul>
+						<a href="#" class="btn_hgroup_menu">
+							<img src="./assets/images/ico_total_menu.png" alt="">
+						</a>
+						<a href="#" class="btn_mb_menu">
+							<img src="./assets/images/ico_total_menu_mb.png" alt="">
+						</a>
+					</div>
+				</div>
+			</hgroup>
+			<!-- mobile -->
+			<div class="mobile_mainmenu_zone">
+				<div class="mainmenu_dim"></div>
+				<div class="mobile_mainmenu_wrap">
+					<div class="mbutil_low">
+						<!-- 로그인 전 -->
+						<!-- <ul class="mbutil_hlist">
+                    <li><a href="#" class="mbutil">로그인</a></li>
+                    <li><a href="#" class="mbutil">회원가입</a></li>
+                </ul> -->
+						<!-- // 로그인 전 -->
+						<!-- 로그인 후 -->
+						<ul class="mbutil_hlist">
+							<li><a href="#" class="mbutil">로그아웃</a></li>
+						</ul>
+						<!-- // 로그인 후 -->
+					</div>
+					<div class="mbmenu_low">
+						<div class="mbmenu_inwrap">
+							<ul class="mbmenu_vlist">
+								<li name="gnb_menu_01"><a href="#" class="mbmenu_one">내지갑</a></li>
+								<li name="gnb_menu_01"><a href="#" class="mbmenu_one">카드</a></li>
+								<li name="gnb_menu_01"><a href="#" class="mbmenu_one">충전 신청</a></li>
+								<li name="gnb_menu_01"><a href="#" class="mbmenu_one">선물하기</a></li>
+								<li name="gnb_menu_01"><a href="#" class="mbmenu_one">공유센터</a></li>
+							</ul>
+						</div>
+					</div>
+					<a href="#" class="btn_mbmenuclose"><span class="hdtext">메인메뉴 닫기</span></a>
+				</div>
+			</div>
+			<!-- // mobile -->
+
+
+			<!-- pc menu -->
+			<div class="nav_depth_list_wrap">
+				<div class="nav_depth_list_inner">
+					<ul class="nav_depth_list">
+						<li>
+							<div class="nav_depth_one_row"><a href="#" class="nav_depth_one">내지갑</a></div>
+							<div class="nav_depth_two_row">
+								<ul class="nav_depth_two_list">
+									<li><a href="#" class="nav_depth_two">COIN변동내역</a></li>
+									<li><a href="#" class="nav_depth_two">USDT변동내역</a></li>
+									<li><a href="#" class="nav_depth_two">USDT변동내역리스트</a></li>
+									<li><a href="#" class="nav_depth_two">전환신청</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="nav_depth_one_row"><a href="#" class="nav_depth_one">카드</a></div>
+							<div class="nav_depth_two_row">
+								<ul class="nav_depth_two_list">
+									<li><a href="#" class="nav_depth_two">카드사용내역</a></li>
+									<li><a href="#" class="nav_depth_two">카드충전</a></li>
+									<li><a href="#" class="nav_depth_two">카드신청</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="nav_depth_one_row"><a href="#" class="nav_depth_one">충전신청</a></div>
+							<div class="nav_depth_two_row">
+								<ul class="nav_depth_two_list">
+									<li><a href="#" class="nav_depth_two">충전신청</a></li>
+									<li><a href="#" class="nav_depth_two">충전신청내역</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="nav_depth_one_row"><a href="#" class="nav_depth_one">선물하기</a></div>
+							<div class="nav_depth_two_row">
+								<ul class="nav_depth_two_list">
+									<li><a href="#" class="nav_depth_two">선물하기</a></li>
+									<li><a href="#" class="nav_depth_two">전송하기</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="nav_depth_one_row"><a href="#" class="nav_depth_one">회원정보</a></div>
+							<div class="nav_depth_two_row">
+								<ul class="nav_depth_two_list">
+									<li><a href="#" class="nav_depth_two">회원정보 수정</a></li>
+									<li><a href="#" class="nav_depth_two">로그 비밀번호 수정</a></li>
+									<li><a href="#" class="nav_depth_two">결제 비밀번호 수정</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<ul class="nav_else_list">
+						<li><a href="#" class="nav_else_item">공유센터</a></li>
+						<li><a href="#" class="nav_else_item">Q&A</a></li>
+						<li><a href="#" class="nav_else_item">공지사항</a></li>
+						<li><a href="#" class="nav_else_item">로그아웃</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- // pc menu -->
+		</header>
+		<section class="middle_wrap">
+			<div class="visual_wrap type2">
+				<div class="visual_title_row">
+					<h2 class="visual_title">크립토 페이 Japan</h2>
+				</div>
+				<div class="visual_wallet_row">
+					<div class="visual_wallet_item">
+						<span class="visual_wallet_handle"></span>
+						<div class="wallet_stoke"></div>
+						<div class="visual_wallet_inner">
+							<div class="wallet_profile_main_cols">
+								<div class="wallet_profile_item">
+									<div class="wallet_profile_img">
+										<img src="./assets/images/ico_wallet.jpg" alt="">
+									</div>
+									<div class="wallet_profile_spec">
+										<p class="wallet_profile_spec_main">HAKAHOHO123</p>
+										<p class="wallet_profile_spec_sub">SONOKONG</p>
+									</div>
+								</div>
+							</div>
+							<div class="wallet_profile_sub_cols">
+								<table class="wallet_tail_table">
+									<tr>
+										<th><span class="wallet_tail_key">추천코드</span></th>
+										<td><span class="wallet_tail_value">HOHO7724</span></td>
+									</tr>
+									<tr>
+										<th><span class="wallet_tail_key">레벨 </span></th>
+										<td><span class="wallet_tail_value">무료회원</span></td>
+									</tr>
+								</table>
+								<p class="wallet_profile_para">
+									<i class="ico_wallet_profile_para"><img src="./assets/images/ico_time.png" class="ico_img" alt=""></i>
+									<span class="textwallet_profile_para">Last activity at 2023-08-30 10:50:03</span>
+								</p>
+								<a href="#" class="btn_more">MORE</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content_wrap">
+				<div class="content_item getboard_box">
+					<div class="getboard_box_title_row">
+						<i class="getboard_box_title_ico"><img src="./assets/images/ico_mike.png" class="ico_img" alt=""></i>
+						<p class="getboard_box_title">NOTICE</p>
+					</div>
+					<div class="getboard_box_content_row">
+						<ul class="getboard_box_content_list">
+							<li>
+								<a href="#" class="getboard_box_content">
+									<i class="ico_getboard_box_content"><img src="./assets/images/ico_docu.png" class="ico_img"></i>
+									<p class="getboard_box_content_main">Q2 단말기+ 해외복권 구매대행 어플 추가</p>
+									<p class="getboard_box_content_else">2024.07.20</p>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="getboard_box_content">
+									<i class="ico_getboard_box_content"><img src="./assets/images/ico_docu.png" class="ico_img"></i>
+									<p class="getboard_box_content_main">Q2 단말기+ 해외복권 구매대행 어플 추가</p>
+									<p class="getboard_box_content_else">2024.07.20</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<a href="#" class="btn_ico_more"><img src="./assets/images/ico_more.png" alt=""></a>
+				</div>
+				<div class="content_item getpay_box">
+					<div class="getpay_box_cols">
+						<div class="getpay_box_item">
+							<div class="getpay_box_title_row">
+								<div class="getpay_title_main">
+									<i class="getpay_title_ico"><img src="./assets/images/ico_dollar.png" alt=""></i>
+									<span class="getpay_title_text">COIN</span>
+								</div>
+								<div class="getpay_title_sub">-7.00</div>
+							</div>
+							<div class="getpay_box_content_row">
+								<ul class="getpay_detail_list">
+									<li>
+										<div class="getpay_detail_item">
+											<p class="getpay_detail_title">
+												<i class="ico_getpay"><img src="./assets/images/ico_main_tail_01.png" class="ico_img" alt=""></i>
+												<span class="getpay_detail_title_text">코인에서 USDT로 변환</span>
+											</p>
+											<div class="getpay_detail_else">
+												<p class="getpay_detail_main">1,000</p>
+												<p class="getpay_detail_sub">2023-09-21</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="getpay_detail_item">
+											<p class="getpay_detail_title">
+												<i class="ico_getpay"><img src="./assets/images/ico_main_tail_02.png" class="ico_img" alt=""></i>
+												<span class="getpay_detail_title_text">Sss3258 선물하기</span>
+											</p>
+											<div class="getpay_detail_else">
+												<p class="getpay_detail_main">1,000</p>
+												<p class="getpay_detail_sub">2023-09-21</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="getpay_detail_item">
+											<p class="getpay_detail_title">
+												<i class="ico_getpay"><img src="./assets/images/ico_main_tail_03.png" class="ico_img" alt=""></i>
+												<span class="getpay_detail_title_text">코인충전</span>
+											</p>
+											<div class="getpay_detail_else">
+												<p class="getpay_detail_main">1,000</p>
+												<p class="getpay_detail_sub">2023-09-21</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="getpay_else_item">
+							<a href="#" class="btn_getpay_submit">
+								<span class="getpay_submit_inner">
+									<i class="ico_btn_getpay"><img src="./assets/images/ico_tong.png" alt=""></i>
+									<span class="getpay_submit_text">COIN 충전 신청</span>
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="getpay_box_cols type2">
+						<div class="getpay_box_item">
+							<div class="getpay_box_title_row">
+								<div class="getpay_title_main">
+									<i class="getpay_title_ico"><img src="./assets/images/ico_dollar.png" alt=""></i>
+									<span class="getpay_title_text">USDT</span>
+								</div>
+								<div class="getpay_title_sub">12,345,678.00</div>
+							</div>
+							<div class="getpay_box_content_row">
+								<ul class="getpay_detail_list">
+									<li>
+										<div class="getpay_detail_item">
+											<p class="getpay_detail_title">
+												<i class="ico_getpay"><img src="./assets/images/ico_main_tail_01.png" class="ico_img" alt=""></i>
+												<span class="getpay_detail_title_text">코인에서 USDT로 변환</span>
+											</p>
+											<div class="getpay_detail_else">
+												<p class="getpay_detail_main">1,000</p>
+												<p class="getpay_detail_sub">2023-09-21</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="getpay_detail_item">
+											<p class="getpay_detail_title">
+												<i class="ico_getpay"><img src="./assets/images/ico_main_tail_02.png" class="ico_img" alt=""></i>
+												<span class="getpay_detail_title_text">Sss3258 선물하기</span>
+											</p>
+											<div class="getpay_detail_else">
+												<p class="getpay_detail_main">1,000</p>
+												<p class="getpay_detail_sub">2023-09-21</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="getpay_detail_item">
+											<p class="getpay_detail_title">
+												<i class="ico_getpay"><img src="./assets/images/ico_main_tail_04.png" class="ico_img" alt=""></i>
+												<span class="getpay_detail_title_text">카드충전</span>
+											</p>
+											<div class="getpay_detail_else">
+												<p class="getpay_detail_main">1,000</p>
+												<p class="getpay_detail_sub">2023-09-21</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="getpay_else_item">
+							<a href="#" class="btn_getpay_submit">
+								<span class="getpay_submit_inner">
+									<i class="ico_btn_getpay"><img src="./assets/images/ico_tong.png" class="ico_img" alt=""></i>
+									<span class="getpay_submit_text">USDT 충전 신청</span>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="content_item btn_box">
+					<a href="#" class="btn_request_box">
+						<span class="btn_request_inner">
+							<i class="ico_request"><img src="./assets/images/ico_card.png" class="ico_img" alt=""></i>
+							<span class="btn_request_text">카드충전 신청</span>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="content_copy_wrap">
+				<div class="content_copy_pix">
+					<div class="content_copy_group">
+						<p class="content_copy_main">We're here to help you</p>
+						<p class="content_copy_sub">Whenever you have questions or need support, submit your report about the issues. Our support team will get back to you by email.</p>
+					</div>
+					<div class="content_copy_else">
+						<a href="#" class="btn_linkbox">Get Support Now</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- notice -->
+		<div class="notice_popup_wrap">
+			<div class="bg_dim no_transition"></div>
+			<div class="notice_popup_cols">
+				<div class="popup_item notice_type no_transition">
+					<div class="popup_titlelow">
+						<h3 class="popup_title">오리아울렛 열림 공지</h3>
+					</div>
+					<div class="popup_contentlow">
+						<div class="pcont_inwrap">
+							<h4 class="pcont_subtitle">오리아울렛 오픈 알림</h4>
+							<ul class="indent_list respon_mt10 fontsize_15">
+								<li>
+									<span class="indent_bullet">1.</span>
+									<div class="indent_item">상품 : 오리오리 주식회사에서 판매하는 제품</div>
+								</li>
+								<li>
+									<span class="indent_bullet">2.</span>
+									<div class="indent_item">구매방법 : DONY, POINT 사용</div>
+								</li>
+								<li>
+									<span class="indent_bullet">3.</span>
+									<div class="indent_item">POINT 적용률 : 0~50%</div>
+								</li>
+								<li>
+									<span class="indent_bullet">4.</span>
+									<div class="indent_item">택배비 포함 가격</div>
+								</li>
+								<li>
+									<span class="indent_bullet">5.</span>
+									<div class="indent_item">택배 또는 센터 구매 가능</div>
+								</li>
+								<li>
+									<span class="indent_bullet">6.</span>
+									<div class="indent_item">아울렛 잭팟 참여 : 상품별 횟수 차등 (1~10회) 충족시 주화 1개 당첨</div>
+								</li>
+								<li>
+									<span class="indent_bullet">7.</span>
+									<div class="indent_item">아울렛에 상품 추가를 원하시는 분은 아래 파일 작성후 카카오 채널 "오리오리 패밀리"로 문의 주세요.</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="popup_btnlow">
+						<div class="padding_box_10_15 flex_grid align_both">
+							<div class="chkrd_item">
+								<input type="checkbox" class="chkrd today_check" id="today_check">
+								<label for="today_check" class="chkrd_label">오늘 하루 열지 않음</label>
+							</div>
+							<a href="javascript:;" class="btn_submitbox inline_type dtype2 close_trigger small">닫기</a>
+						</div>
+					</div>
+					<a href="javascript:;" class="btn_popup_close"><span class="hdtext">닫기</span></a>
+				</div>
+			</div>
+			<div class="notice_popup_cols">
+				<div class="popup_item notice_type no_transition">
+					<div class="popup_titlelow">
+						<h3 class="popup_title">공지팝업2</h3>
+					</div>
+					<div class="popup_contentlow">
+						<div class="pcont_inwrap">
+							공지사항
+						</div>
+					</div>
+					<div class="popup_btnlow">
+						<div class="padding_box_10_15 flex_grid align_both">
+							<div class="chkrd_item">
+								<input type="checkbox" class="chkrd today_check" id="today_check2">
+								<label for="today_check2" class="chkrd_label">오늘 하루 열지 않음</label>
+							</div>
+							<a href="javascript:;" class="btn_submitbox inline_type dtype2 close_trigger small">닫기</a>
+						</div>
+					</div>
+					<a href="javascript:;" class="btn_popup_close"><span class="hdtext">닫기</span></a>
+				</div>
+			</div>
+			<div class="notice_popup_cols">
+				<div class="popup_item notice_type no_transition">
+					<div class="popup_titlelow">
+						<h3 class="popup_title">공지팝업3</h3>
+					</div>
+					<div class="popup_contentlow">
+						<div class="pcont_inwrap">
+							공지사항
+						</div>
+					</div>
+					<div class="popup_btnlow">
+						<div class="padding_box_10_15 flex_grid align_both">
+							<div class="chkrd_item">
+								<input type="checkbox" class="chkrd today_check" id="today_check3">
+								<label for="today_check3" class="chkrd_label">오늘 하루 열지 않음</label>
+							</div>
+							<a href="javascript:;" class="btn_submitbox inline_type dtype2 close_trigger small">닫기</a>
+						</div>
+					</div>
+					<a href="javascript:;" class="btn_popup_close"><span class="hdtext">닫기</span></a>
+				</div>
+			</div>
+			<div class="notice_popup_cols">
+				<div class="popup_item notice_type no_transition">
+					<div class="popup_titlelow">
+						<h3 class="popup_title">공지팝업4</h3>
+					</div>
+					<div class="popup_contentlow">
+						<div class="pcont_inwrap">
+							공지사항
+						</div>
+					</div>
+					<div class="popup_btnlow">
+						<div class="padding_box_10_15 flex_grid align_both">
+							<div class="chkrd_item">
+								<input type="checkbox" class="chkrd today_check" id="today_check4">
+								<label for="today_check4" class="chkrd_label">오늘 하루 열지 않음</label>
+							</div>
+							<a href="javascript:;" class="btn_submitbox inline_type dtype2 close_trigger small">닫기</a>
+						</div>
+					</div>
+					<a href="javascript:;" class="btn_popup_close"><span class="hdtext">닫기</span></a>
+				</div>
+			</div>
+		</div>
+		<!-- // notice -->
+		<script>
+			window.addEventListener("load", () => {
+				getpayBoxFunc();
+
+				noticePopup(); // 공지사항 팝업
+			});
+		</script>
+		<footer class="footer_wrap">
+			<div class="footer_pix">
+				<div class="footer_item_group">
+					<span class="footer_item"><img src="./assets/images/bottomlogo.png" alt="Crypto pay"></span>
+					<p class="footer_item_para">Copyright (c) Crypto pay. All rights reserved</p>
+				</div>
+				<a href="#" class="btn_bottom_go"></a>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
