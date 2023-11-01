@@ -50,48 +50,53 @@
 							<a href="#" class="sc_tab"><span class="sc_tab_text">전송하기 신청내역</span></a>
 						</div>
 					</div>
-                    <div class="both_rendar_box_wrap">
-						<div class="both_rendar_box_cols">
-							<div class="rendar_fieldset_row">
-								<div class="rendar_fieldset_title_row"><p class="rendar_fieldset_title">전송정보</p></div>
-								<div class="rendar_fieldset_content_row">
-									<div class="form_fieldset_table_wrap">
-										<table class="form_fieldset_table">
-											<tr>
-												<th><span class="form_label">지갑주소</span></th>
-												<td><input type="text" class="form_input" value="01000001111"></td>
-												<th><span class="form_label">결제비밀번호</span></th>
-												<td class="wid_long"><input type="password" class="form_input" value="*****"></td>
-											</tr>
-											<tr>
-												<th><span class="form_label">전송수량</span></th>
-												<td>
-													<div class="input_component_box">
-														<div class="input_comp_cols"><input type="text" class="input_comp_item" value="01000001111"></div>
-														<div class="placeholder_comp_cols"><p class="input_comp_placeholder">Please enter numbers only</p></div>
-													</div>
-												</td>
-												<th class="empty"></th>
-												<td class="empty wid_long"></td>
-											</tr>
-										</table>
+					<form>
+						<div class="both_rendar_box_wrap">
+							<div class="both_rendar_box_cols">
+								<div class="rendar_fieldset_row">
+									<div class="rendar_fieldset_title_row"><p class="rendar_fieldset_title">전송정보</p></div>
+									<div class="rendar_fieldset_content_row">
+										<div class="form_fieldset_table_wrap">
+											<table class="form_fieldset_table">
+												<tr>
+													<th><span class="form_label">지갑주소</span></th>
+													<td><input type="text" class="form_input" value="01000001111"></td>
+													<th><span class="form_label">결제비밀번호</span></th>
+													<td class="wid_long"><input type="password" class="form_input" value="*****"></td>
+												</tr>
+												<tr>
+													<th><span class="form_label">전송수량</span></th>
+													<td>
+														<!-- <div class="input_component_box">
+															<div class="input_comp_cols"><input type="text" class="input_comp_item" value="01000001111"></div>
+															<div class="placeholder_comp_cols"><p class="input_comp_placeholder">Please enter numbers only</p></div>
+														</div> -->
+														<div class="form_input_group">
+															<input type="text" class="form_input reverse_place" name="pc_only_placeholder" placeholder="Please enter numbers only" value="01000001111">
+															<p class="mobile_place_para">Please enter numbers only</p>
+														</div>
+													</td>
+													<th class="empty"></th>
+													<td class="empty wid_long"></td>
+												</tr>
+											</table>
+										</div>
+										<!-- <div class="input_component_box">
+											<div class="input_comp_cols"><input type="text" class="input_comp_item" value="1000"></div>
+											<div class="placeholder_comp_cols"><p class="input_comp_placeholder">6자리 숫자만 공백 없이 입력해 주세요.</p></div>
+										</div> -->
 									</div>
-									<!-- <div class="input_component_box">
-										<div class="input_comp_cols"><input type="text" class="input_comp_item" value="1000"></div>
-										<div class="placeholder_comp_cols"><p class="input_comp_placeholder">6자리 숫자만 공백 없이 입력해 주세요.</p></div>
-									</div> -->
 								</div>
 							</div>
 						</div>
-					</div>
-
-					<div class="btn_submit_box_wrap">
-                        <a href="#" class="btn_submit_box">
-                            <span class="btn_submit_box_inner">
-                                <span class="btn_submit_box_text">전송하기 신청</span>
-                            </span>
-                        </a>
-                    </div>
+						<div class="btn_submit_box_wrap">
+							<a href="#" class="btn_submit_box">
+								<span class="btn_submit_box_inner">
+									<span class="btn_submit_box_text">전송하기 신청</span>
+								</span>
+							</a>
+						</div>
+					</form>
                 </div>
             </div>
             <!-- // sub contents -->

@@ -32,47 +32,49 @@
 		</header>
 		<div class="full_mid_wrap" style="background-image:url(./assets/images/bg_login_02.jpg)">
 			<div class="form_screen_item">
-				<fieldset class="form_screen_field">
-					<legend>LOGIN</legend>
-					<div class="screen_form_titlow">
-						<h3 class="screen_form_tit">LOGIN</h3>
-					</div>
-					<div class="screen_form_tb">
-						<div class="screen_form_tr">
-							<div class="screen_form_cell define_formth"><span class="sform_label">아이디</span></div>
-							<div class="screen_form_cell define_formtd">
-								<div class="sform_inwrap">
-									<input type="text" class="sform_input">
+				<form>
+					<fieldset class="form_screen_field">
+						<legend>LOGIN</legend>
+						<div class="screen_form_titlow">
+							<h3 class="screen_form_tit">LOGIN</h3>
+						</div>
+						<div class="screen_form_tb">
+							<div class="screen_form_tr">
+								<div class="screen_form_cell define_formth"><span class="sform_label">아이디</span></div>
+								<div class="screen_form_cell define_formtd">
+									<div class="sform_inwrap">
+										<input type="text" class="sform_input">
+									</div>
+								</div>
+							</div>
+							<div class="screen_form_tr">
+								<div class="screen_form_cell define_formth"><span class="sform_label">비밀번호</span></div>
+								<div class="screen_form_cell define_formtd">
+									<div class="sform_inwrap">
+										<input type="password" class="sform_input">
+										<button class="btn_inline_ico ico_eye"><span class="hdtext">비밀번호 보기</span></button>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="screen_form_tr">
-							<div class="screen_form_cell define_formth"><span class="sform_label">비밀번호</span></div>
-							<div class="screen_form_cell define_formtd">
-								<div class="sform_inwrap">
-									<input type="password" class="sform_input">
-									<button class="btn_inline_ico ico_eye"><span class="hdtext">비밀번호 보기</span></button>
-								</div>
+						<div class="capcha_form_wrap">
+							<div class="capcha_img"><img src="./assets/images/img_character.png" alt=""></div>
+							<div class="capcha_copy_wrap">
+								<p class="capcha_copy">TO change the image character</p>
+							</div>
+							<div class="capcha_form">
+								<input type="text" class="form_input placeholder_c" placeholder="Please enter image characters">
+							</div>
+							<div class="capcha_other_form">
+								<img src="./assets/images/temp_cloud.png" style="width:100%;" alt="">
 							</div>
 						</div>
-					</div>
-					<div class="capcha_form_wrap">
-						<div class="capcha_img"><img src="./assets/images/img_character.png" alt=""></div>
-						<div class="capcha_copy_wrap">
-							<p class="capcha_copy">TO change the image character</p>
+						<div class="btn_formsubmit_low">
+							<button type="submit" class="btn_formsubmit">로그인</button>
+							<a href="#" class="btn_formsubmit dtype2" id="btn_idpw_call">Find ID/Password</a>
 						</div>
-						<div class="capcha_form">
-							<input type="text" class="form_input placeholder_c" placeholder="Please enter image characters">
-						</div>
-						<div class="capcha_other_form">
-							<img src="./assets/images/temp_cloud.png" style="width:100%;" alt="">
-						</div>
-					</div>
-					<div class="btn_formsubmit_low">
-						<button type="submit" class="btn_formsubmit">로그인</button>
-						<a href="#" class="btn_formsubmit dtype2" id="btn_idpw_call">Find ID/Password</a>
-					</div>
-				</fieldset>
+					</fieldset>
+				</form>
 			</div>
 		</div>
 		<!-- popup -->

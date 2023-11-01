@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;  charset=utf-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="./assets/css/style.css" rel="stylesheet">
+	<script src="./assets/js/dynamicListener.min.js"></script>
+	<script src="./assets/js/jquery-3.4.1.min.js"></script>
+	<script src="./assets/js/front.js"></script>
+	<title></title>
+</head>
+
+<body class="front_body">
+	<div class="page_wrap">
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script>
+			var htmlArray = [],
+				reverseArray = [];
+			$(window).on("load", function() {
+
+				cmaTextareaSize();
+			});
+
+			function cmaTextareaSize(obj, bsize) { // 객체명, 기본사이즈
+				var sTextarea = $(".textarea_size");
+				sTextarea.each(function() {
+					$(this).css("height", $(this)[0].scrollHeight);
+				});
+			}
+		</script>
+		<section class="middle_wrap guide">
+			<div class="subcontent_box_wrap">
+				<div class="subcontent_box">
+					<h3 class="subcontent_title">컴포넌트 가이드</h3>
+					<div class="subcontent">
+						<div class="source_his_z">
+							<!-- source_his_item -->
+							<div class="source_his_item">
+								<p class="component_title">버튼</p>
+								<div class="component_dep_wrap">
+									<div class="component_dep">
+										<p class="component_title_sub">1.버튼 표현 모음</p>
+										<div class="rendar_wrap">
+											<a href="#" class="btn_getpay_submit">
+												<span class="getpay_submit_inner">
+													<i class="ico_btn_getpay"><img src="./assets/images/ico_tong.png" alt=""></i>
+													<span class="getpay_submit_text">COIN 충전 신청</span>
+												</span>
+											</a>
+											<a href="#" class="btn_getpay_submit type2">
+												<span class="getpay_submit_inner">
+													<i class="ico_btn_getpay"><img src="./assets/images/ico_tong.png" class="ico_img" alt=""></i>
+													<span class="getpay_submit_text">USDT 충전 신청</span>
+												</span>
+											</a>
+											<br>
+											<a href="#" class="btn_request_box">
+												<span class="btn_request_inner">
+													<i class="ico_request"><img src="./assets/images/ico_card.png" class="ico_img" alt=""></i>
+													<span class="btn_request_text">카드충전 신청</span>
+												</span>
+											</a>
+											<div class="btn_getpay_submit">
+												<span class="getpay_submit_inner">
+													<i class="ico_btn_getpay"><img src="./assets/images/ico_tong.png" alt=""></i>
+													<span class="getpay_submit_text">COIN 충전 신청 submit</span>
+												</span>
+												<input type="submit" class="submit_origin">
+											</div>
+											<div class="btn_getpay_submit type2">
+												<span class="getpay_submit_inner">
+													<i class="ico_btn_getpay"><img src="./assets/images/ico_tong.png" class="ico_img" alt=""></i>
+													<span class="getpay_submit_text">USDT 충전 신청 submit</span>
+												</span>
+												<input type="submit" class="submit_origin">
+											</div>
+											<br>
+											<div class="btn_request_box">
+												<span class="btn_request_inner">
+													<i class="ico_request"><img src="./assets/images/ico_card.png" class="ico_img" alt=""></i>
+													<span class="btn_request_text">카드충전 신청 submit</span>
+												</span>
+												<input type="submit" class="submit_origin">
+											</div>
+											<button class="btn_getpay_submit">
+												<span class="getpay_submit_inner">
+													<i class="ico_btn_getpay"><img src="./assets/images/ico_tong.png" alt=""></i>
+													<span class="getpay_submit_text">COIN 충전 신청 button</span>
+												</span>
+											</button>
+											<button class="btn_getpay_submit type2">
+												<span class="getpay_submit_inner">
+													<i class="ico_btn_getpay"><img src="./assets/images/ico_tong.png" class="ico_img" alt=""></i>
+													<span class="getpay_submit_text">USDT 충전 신청 button</span>
+												</span>
+											</button>
+											<br>
+											<button class="btn_request_box">
+												<span class="btn_request_inner">
+													<i class="ico_request"><img src="./assets/images/ico_card.png" class="ico_img" alt=""></i>
+													<span class="btn_request_text">카드충전 신청 button</span>
+												</span>
+											</button>
+											<br>
+											<a href="#" class="btn_submit_box">
+												<span class="btn_submit_box_inner">
+													<i class="ico_request"><img src="./assets/images/ico_tong_60x60.png" alt=""></i>
+													<span class="btn_submit_box_text">전환신청</span>
+												</span>
+											</a>
+											<br><br>
+											<div class="btn_submit_box">
+												<span class="btn_submit_box_inner">
+													<i class="ico_request"><img src="./assets/images/ico_tong_60x60.png" alt=""></i>
+													<span class="btn_submit_box_text">전환신청 submit</span>
+												</span>
+												<input type="submit" class="submit_origin">
+											</div>
+											<button class="btn_submit_box">
+												<span class="btn_submit_box_inner">
+													<i class="ico_request"><img src="./assets/images/ico_tong_60x60.png" alt=""></i>
+													<span class="btn_submit_box_text">전환신청 button</span>
+												</span>
+											</button>
+											<br><br>
+											<a href="#" class="btn_submit_box height_small bg_type2">
+												<span class="btn_submit_box_inner">
+													<span class="btn_submit_box_text">PIN 설정</span>
+												</span>
+											</a>
+											<a href="#" class="btn_submit_box height_small">
+												<span class="btn_submit_box_inner">
+													<span class="btn_submit_box_text">카드충전</span>
+												</span>
+											</a>
+											<br><br>
+											<a href="#" class="btn_submit_box">
+												<span class="btn_submit_box_inner">
+													<span class="btn_submit_box_text">카드 신청</span>
+												</span>
+											</a>
+
+											<br><br>
+
+											<button class="btn_submit_box height_small bg_type2">
+												<span class="btn_submit_box_inner">
+													<span class="btn_submit_box_text">PIN 설정 button</span>
+												</span>
+											</button>
+											<button class="btn_submit_box height_small">
+												<span class="btn_submit_box_inner">
+													<span class="btn_submit_box_text">카드충전 button</span>
+												</span>
+											</button>
+											<br><br>
+											<button class="btn_submit_box">
+												<span class="btn_submit_box_inner">
+													<span class="btn_submit_box_text">카드 신청 button</span>
+												</span>
+											</button>
+
+											<br><br>
+											<div class="btn_submit_box height_small bg_type2">
+												<span class="btn_submit_box_inner">
+													<span class="btn_submit_box_text">PIN 설정 submit</span>
+												</span>
+												<input type="submit" class="submit_origin">
+											</div>
+											<div class="btn_submit_box height_small">
+												<span class="btn_submit_box_inner">
+													<span class="btn_submit_box_text">카드충전 submit</span>
+												</span>
+												<input type="submit" class="submit_origin">
+											</div>
+											<br><br>
+											<div class="btn_submit_box">
+												<span class="btn_submit_box_inner">
+													<span class="btn_submit_box_text">카드 신청 submit</span>
+												</span>
+												<input type="submit" class="submit_origin">
+											</div>
+											<br><br>
+											<a href="#" class="btn_inline_box">인증번호발송</a>
+											<button class="btn_inline_box">인증번호발송 button</button>
+
+											<a href="#" class="btn_inline_control">변경하기</a>
+											<button class="btn_inline_control">변경하기 button</button>
+											<br><br>
+											<a href="javascript:;" class="btn_function_box">복사하기</a>
+											<button class="btn_function_box">복사하기 button</button>
+
+											<br><br>
+
+											<div style="background:#49a6fc;padding:20px;">
+												<a href="#" class="btn_control_box"><span class="btn_control_box_text">MORE</span></a>
+												<button class="btn_control_box"><span class="btn_control_box_text">MORE button</span></button>
+											</div>
+
+											<br><br>
+
+											<div style="padding:20px;">
+												<a href="#" class="btn_link_box"><span class="btn_link_box_text">MORE</span></a>
+												<button class="btn_link_box"><span class="btn_link_box_text">MORE button</span></button>
+											</div>
+
+											<br><br>
+											<a href="#" class="btn_linkbox">Get Support Now</a>
+										</div>
+									</div>
+									<div class="component_dep">
+										<p class="component_title_sub">2.버튼 정렬(대부분 가운데)</p>
+										<div class="rendar_wrap">
+											<div class="btn_submit_box_wrap">
+												<div class="btn_submit_box">
+													<span class="btn_submit_box_inner">
+														<i class="ico_request"><img src="./assets/images/ico_tong_60x60.png" alt=""></i>
+														<span class="btn_submit_box_text">전환신청</span>
+													</span>
+													<input type="submit" class="submit_origin">
+												</div>
+											</div>
+
+											<br><br>
+
+											<div class="btn_submit_box_wrap type3">
+												<div class="btn_submit_box height_small bg_type2">
+													<span class="btn_submit_box_inner">
+														<span class="btn_submit_box_text">PIN 설정</span>
+													</span>
+													<input type="submit" class="submit_origin">
+												</div>
+												<div class="btn_submit_box height_small">
+													<span class="btn_submit_box_inner">
+														<span class="btn_submit_box_text">카드충전</span>
+													</span>
+													<input type="submit" class="submit_origin">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="component_dep">
+										<p class="component_title_sub">3. 페이지 네비</p>
+										<div class="rendar_wrap">
+											<ul class="pagination">
+												<li class="paginate_button previous"><a href="#">이전</a></li>
+												<li class="paginate_button active"><a href="#">1</a></li>
+												<li class="paginate_button"><a href="#">2</a></li>
+												<li class="paginate_button"><a href="#">3</a></li>
+												<li class="paginate_button"><a href="#">4</a></li>
+												<li class="paginate_button"><a href="#">5</a></li>
+												<li class="paginate_button next"><a href="#">다음</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<textarea class="textarea_size">
+<p class="component_title_sub">1.버튼 표현 모음</p>
+
+<a href="#" class="btn_getpay_submit">
+	<span class="getpay_submit_inner">
+		<i class="ico_btn_getpay"><img src="./assets/images/ico_tong.png" alt=""></i>
+		<span class="getpay_submit_text">COIN 충전 신청</span>
+	</span>
+</a>
+<a href="#" class="btn_getpay_submit type2">
+	<span class="getpay_submit_inner">
+		<i class="ico_btn_getpay"><img src="./assets/images/ico_tong.png" class="ico_img" alt=""></i>
+		<span class="getpay_submit_text">USDT 충전 신청</span>
+	</span>
+</a>
+<br>
+<a href="#" class="btn_request_box">
+	<span class="btn_request_inner">
+		<i class="ico_request"><img src="./assets/images/ico_card.png" class="ico_img" alt=""></i>
+		<span class="btn_request_text">카드충전 신청</span>
+	</span>
+</a>
+<div class="btn_getpay_submit">
+	<span class="getpay_submit_inner">
+		<i class="ico_btn_getpay"><img src="./assets/images/ico_tong.png" alt=""></i>
+		<span class="getpay_submit_text">COIN 충전 신청 submit</span>
+	</span>
+	<input type="submit" class="submit_origin">
+</div>
+<div class="btn_getpay_submit type2">
+	<span class="getpay_submit_inner">
+		<i class="ico_btn_getpay"><img src="./assets/images/ico_tong.png" class="ico_img" alt=""></i>
+		<span class="getpay_submit_text">USDT 충전 신청 submit</span>
+	</span>
+	<input type="submit" class="submit_origin">
+</div>
+<br>
+<div class="btn_request_box">
+	<span class="btn_request_inner">
+		<i class="ico_request"><img src="./assets/images/ico_card.png" class="ico_img" alt=""></i>
+		<span class="btn_request_text">카드충전 신청 submit</span>
+	</span>
+	<input type="submit" class="submit_origin">
+</div>
+<button class="btn_getpay_submit">
+	<span class="getpay_submit_inner">
+		<i class="ico_btn_getpay"><img src="./assets/images/ico_tong.png" alt=""></i>
+		<span class="getpay_submit_text">COIN 충전 신청 button</span>
+	</span>
+</button>
+<button class="btn_getpay_submit type2">
+	<span class="getpay_submit_inner">
+		<i class="ico_btn_getpay"><img src="./assets/images/ico_tong.png" class="ico_img" alt=""></i>
+		<span class="getpay_submit_text">USDT 충전 신청 button</span>
+	</span>
+</button>
+<br>
+<button class="btn_request_box">
+	<span class="btn_request_inner">
+		<i class="ico_request"><img src="./assets/images/ico_card.png" class="ico_img" alt=""></i>
+		<span class="btn_request_text">카드충전 신청 button</span>
+	</span>
+</button>
+<br>
+<a href="#" class="btn_submit_box">
+	<span class="btn_submit_box_inner">
+		<i class="ico_request"><img src="./assets/images/ico_tong_60x60.png" alt=""></i>
+		<span class="btn_submit_box_text">전환신청</span>
+	</span>
+</a>
+<br><br>
+<div class="btn_submit_box">
+	<span class="btn_submit_box_inner">
+		<i class="ico_request"><img src="./assets/images/ico_tong_60x60.png" alt=""></i>
+		<span class="btn_submit_box_text">전환신청 submit</span>
+	</span>
+	<input type="submit" class="submit_origin">
+</div>
+<button class="btn_submit_box">
+	<span class="btn_submit_box_inner">
+		<i class="ico_request"><img src="./assets/images/ico_tong_60x60.png" alt=""></i>
+		<span class="btn_submit_box_text">전환신청 button</span>
+	</span>
+</button>
+<br><br>
+<a href="#" class="btn_submit_box height_small bg_type2">
+	<span class="btn_submit_box_inner">
+		<span class="btn_submit_box_text">PIN 설정</span>
+	</span>
+</a>
+<a href="#" class="btn_submit_box height_small">
+	<span class="btn_submit_box_inner">
+		<span class="btn_submit_box_text">카드충전</span>
+	</span>
+</a>
+<br><br>
+<a href="#" class="btn_submit_box">
+	<span class="btn_submit_box_inner">
+		<span class="btn_submit_box_text">카드 신청</span>
+	</span>
+</a>
+
+<br><br>
+
+<button class="btn_submit_box height_small bg_type2">
+	<span class="btn_submit_box_inner">
+		<span class="btn_submit_box_text">PIN 설정 button</span>
+	</span>
+</button>
+<button class="btn_submit_box height_small">
+	<span class="btn_submit_box_inner">
+		<span class="btn_submit_box_text">카드충전 button</span>
+	</span>
+</button>
+<br><br>
+<button class="btn_submit_box">
+	<span class="btn_submit_box_inner">
+		<span class="btn_submit_box_text">카드 신청 button</span>
+	</span>
+</button>
+
+<br><br>
+<div class="btn_submit_box height_small bg_type2">
+	<span class="btn_submit_box_inner">
+		<span class="btn_submit_box_text">PIN 설정 submit</span>
+	</span>
+	<input type="submit" class="submit_origin">
+</div>
+<div class="btn_submit_box height_small">
+	<span class="btn_submit_box_inner">
+		<span class="btn_submit_box_text">카드충전 submit</span>
+	</span>
+	<input type="submit" class="submit_origin">
+</div>
+<br><br>
+<div class="btn_submit_box">
+	<span class="btn_submit_box_inner">
+		<span class="btn_submit_box_text">카드 신청 submit</span>
+	</span>
+	<input type="submit" class="submit_origin">
+</div>
+<br><br>
+<a href="#" class="btn_inline_box">인증번호발송</a>
+<button class="btn_inline_box">인증번호발송 button</button>
+
+<a href="#" class="btn_inline_control">변경하기</a>
+<button class="btn_inline_control">변경하기 button</button>
+<br><br>
+<a href="javascript:;" class="btn_function_box">복사하기</a>
+<button class="btn_function_box">복사하기 button</button>
+
+<br><br>
+
+<div style="background:#49a6fc;padding:20px;">
+	<a href="#" class="btn_control_box"><span class="btn_control_box_text">MORE</span></a>
+	<button class="btn_control_box"><span class="btn_control_box_text">MORE button</span></button>
+</div>
+
+<br><br>
+
+<div style="padding:20px;">
+	<a href="#" class="btn_link_box"><span class="btn_link_box_text">MORE</span></a>
+	<button class="btn_link_box"><span class="btn_link_box_text">MORE button</span></button>
+</div>
+
+<br><br>
+<a href="#" class="btn_linkbox">Get Support Now</a>
+
+<p class="component_title_sub">3. 페이지 네비</p>
+<ul class="pagination">
+	<li class="paginate_button previous"><a href="#">이전</a></li>
+	<li class="paginate_button active"><a href="#">1</a></li>
+	<li class="paginate_button"><a href="#">2</a></li>
+	<li class="paginate_button"><a href="#">3</a></li>
+	<li class="paginate_button"><a href="#">4</a></li>
+	<li class="paginate_button"><a href="#">5</a></li>
+	<li class="paginate_button next"><a href="#">다음</a></li>
+</ul>
+								</textarea>
+							</div>
+							<!-- // source_his_item -->
+							<!-- source_his_item -->
+							<div class="source_his_item">
+								<p class="component_title">[폼요소]인풋, 텍스트박스, 체크박스, 셀렉트박스</p>
+								<div class="component_dep_wrap">
+									<div class="component_dep">
+										<p class="component_title_sub">1.폼요소 표현 모음</p>
+										<div class="rendar_wrap">
+
+										</div>
+									</div>
+									<div class="component_dep">
+										<p class="component_title_sub">2.검색영역 폼요소 표현</p>
+										<div class="rendar_wrap">
+
+										</div>
+									</div>
+								</div>
+								<textarea class="textarea_size">
+
+								</textarea>
+							</div>
+							<!-- // source_his_item -->
+							<!-- source_his_item -->
+							<div class="source_his_item">
+								<p class="component_title">TAB</p>
+								<div class="component_dep_wrap">
+									<div class="component_dep">
+										<div class="rendar_wrap">
+											<div class="sc_tab_wrap">
+												<div class="sc_tab_group">
+													<a href="#" class="sc_tab"><span class="sc_tab_text">카드 충전 신청</span></a>
+													<a href="#" class="sc_tab active"><span class="sc_tab_text">카드 충전 신청내역</span></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<textarea class="textarea_size">
+									<div class="sc_tab_wrap">
+										<div class="sc_tab_group">
+											<a href="#" class="sc_tab"><span class="sc_tab_text">카드 충전 신청</span></a>
+											<a href="#" class="sc_tab active"><span class="sc_tab_text">카드 충전 신청내역</span></a>
+										</div>
+									</div>
+								</textarea>
+							</div>
+							<!-- // source_his_item -->
+							<!-- source_his_item -->
+							<div class="source_his_item">
+								<p class="component_title">Flex 레이아웃</p>
+								<div class="component_dep_wrap">
+									<div class="component_dep">
+										<p class="component_title_sub">1.Flex 레이아웃 - Right</p>
+										<div class="rendar_wrap">
+											<div class="flex_grid align_right">
+												<div class="chkrd_item">
+													<input type="checkbox" class="chkrd" id="all_ok">
+													<label for="all_ok" class="chkrd_label">이용약관에 모두 동의합니다.</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="component_dep">
+										<p class="component_title_sub">2.Flex 레이아웃 - both</p>
+										<div class="rendar_wrap">
+											<div class="flex_grid align_both">
+												<div class="chkrd_item">
+													<input type="checkbox" class="chkrd today_check" id="today_check">
+													<label for="today_check" class="chkrd_label">오늘 하루 열지 않음</label>
+												</div>
+												<a href="javascript:;" class="btn_submitbox inline_type dtype2 close_trigger small">닫기</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<textarea class="textarea_size">
+1.Flex 레이아웃 - Right
+<div class="flex_grid align_right">
+	<div class="chkrd_item">
+		<input type="checkbox" class="chkrd" id="all_ok">
+		<label for="all_ok" class="chkrd_label">이용약관에 모두 동의합니다.</label>
+	</div>
+</div>
+
+2.Flex 레이아웃 - both
+<div class="flex_grid align_both">
+	<div class="chkrd_item">
+		<input type="checkbox" class="chkrd today_check" id="today_check">
+		<label for="today_check" class="chkrd_label">오늘 하루 열지 않음</label>
+	</div>
+	<a href="javascript:;" class="btn_submitbox inline_type dtype2 close_trigger small">닫기</a>
+</div>
+								</textarea>
+							</div>
+							<!-- // source_his_item -->
+							<!-- source_his_item -->
+							<div class="source_his_item">
+								<p class="component_title">아이콘</p>
+								<div class="component_dep_wrap">
+									<div class="component_dep">
+										<p class="component_title_sub">1.아이콘 표현 모음</p>
+										<div class="rendar_wrap">
+
+										</div>
+									</div>
+								</div>
+								<textarea class="textarea_size">
+
+								</textarea>
+							</div>
+							<!-- // source_his_item -->
+							<!-- source_his_item -->
+							<div class="source_his_item">
+								<p class="component_title">리스트</p>
+								<div class="component_dep_wrap">
+									<div class="component_dep">
+										<p class="component_title_sub">1.리스트 모음</p>
+										<div class="rendar_wrap">
+
+										</div>
+									</div>
+								</div>
+								<textarea class="textarea_size">
+
+								</textarea>
+							</div>
+							<!-- // source_his_item -->
+							<!-- source_his_item -->
+							<div class="source_his_item">
+								<p class="component_title">폰트,마진</p>
+								<div class="component_dep_wrap">
+									<div class="component_dep">
+										<p class="component_title_sub">1.폰트 표현</p>
+										<div class="rendar_wrap">
+											<p class="fontsize_12">홍길동</p>
+											<p class="fontsize_13 font_bold">홍길동</p>
+											<p class="fontsize_14 font_boldx2">홍길동</p>
+											<p class="fontsize_15">홍길동</p>
+											<p class="fontsize_16 color_emp_red">홍길동</p>
+											<p class="fontsize_17 color_emp_black font_boldx2">홍길동</p>
+											<p class="fontsize_18">홍길동</p>
+											<p class="fontsize_19 color_emp_black">홍길동</p>
+											<p class="fontsize_20">홍길동</p>
+										</div>
+									</div>
+									<div class="component_dep">
+										<p class="component_title_sub">2.상단마진(고정)</p>
+										<div class="rendar_wrap">
+											<div style="background:powderblue" class="mt5">상단 5px(PC,모바일공통)</div>
+											<div style="background:powderblue" class="mt10">상단 10px(PC,모바일공통)</div>
+											<div style="background:powderblue" class="mt20">상단 20px(PC,모바일공통)</div>
+											<div style="background:powderblue" class="mt30">상단 30px(PC,모바일공통)</div>
+											<div style="background:powderblue" class="mt40">상단 40px(PC,모바일공통)</div>
+											<div style="background:powderblue" class="mt50">상단 50px(PC,모바일공통)</div>
+											<div style="background:powderblue" class="mt60">상단 60px(PC,모바일공통)</div>
+											<div style="background:powderblue" class="mt70">상단 70px(PC,모바일공통)</div>
+											<div style="background:powderblue" class="mt80">상단 80px(PC,모바일공통)</div>
+											<div style="background:powderblue" class="mt90">상단 90px(PC,모바일공통)</div>
+											<div style="background:powderblue" class="mt100">상단 100px(PC,모바일공통)</div>
+										</div>
+									</div>
+									<div class="component_dep">
+										<p class="component_title_sub">3.상단마진(반응형)</p>
+										<div class="rendar_wrap">
+											<div style="background:pink" class="respon_mt10">상단 10px(PC,모바일따로)</div>
+											<div style="background:pink" class="respon_mt20">상단 20px(PC,모바일따로)</div>
+											<div style="background:pink" class="respon_mt30">상단 30px(PC,모바일따로)</div>
+											<div style="background:pink" class="respon_mt40">상단 40px(PC,모바일따로)</div>
+											<div style="background:pink" class="respon_mt50">상단 50px(PC,모바일따로)</div>
+											<div style="background:pink" class="respon_mt60">상단 60px(PC,모바일따로)</div>
+											<div style="background:pink" class="respon_mt70">상단 70px(PC,모바일따로)</div>
+											<div style="background:pink" class="respon_mt80">상단 80px(PC,모바일따로)</div>
+											<div style="background:pink" class="respon_mt90">상단 90px(PC,모바일따로)</div>
+											<div style="background:pink" class="respon_mt100">상단 100px(PC,모바일따로)</div>
+										</div>
+									</div>
+									<div class="component_dep">
+										<p class="component_title_sub">3.하단마진(반응형)</p>
+										<div class="rendar_wrap">
+											<div style="background:lightgreen" class="respon_mb10">하단 10px(PC,모바일따로)</div>
+											<div style="background:lightgreen" class="respon_mb20">하단 20px(PC,모바일따로)</div>
+											<div style="background:lightgreen" class="respon_mb30">하단 30px(PC,모바일따로)</div>
+											<div style="background:lightgreen" class="respon_mb40">하단 40px(PC,모바일따로)</div>
+											<div style="background:lightgreen" class="respon_mb50">하단 50px(PC,모바일따로)</div>
+											<div style="background:lightgreen" class="respon_mb60">하단 60px(PC,모바일따로)</div>
+											<div style="background:lightgreen" class="respon_mb70">하단 70px(PC,모바일따로)</div>
+											<div style="background:lightgreen" class="respon_mb80">하단 80px(PC,모바일따로)</div>
+											<div style="background:lightgreen" class="respon_mb90">하단 90px(PC,모바일따로)</div>
+											<div style="background:lightgreen" class="respon_mb100">하단 100px(PC,모바일따로)</div>
+										</div>
+									</div>
+									<div class="component_dep">
+										<p class="component_title_sub">4.좌우마진(고정)</p>
+										<div class="rendar_wrap">
+											<div style="background:orange" class="respon_mboth50">좌우 50px(PC,모바일공통)</div>
+											<div style="background:orange" class="respon_mboth60">좌우 60px(PC,모바일공통)</div>
+											<div style="background:orange" class="respon_mboth70">좌우 70px(PC,모바일공통)</div>
+											<div style="background:orange" class="respon_mboth80">좌우 80px(PC,모바일공통)</div>
+											<div style="background:orange" class="respon_mboth90">좌우 90px(PC,모바일공통)</div>
+											<div style="background:orange" class="respon_mboth100">좌우 100px(PC,모바일공통)</div>
+										</div>
+									</div>
+									<div class="component_dep">
+										<p class="component_title_sub">5.전체패딩</p>
+										<div class="rendar_wrap">
+											<div style="outline:1px solid red" class="padding_box_10_15">상하 10px 좌우 15px(PC,모바일공통)</div>
+											<div style="outline:1px solid red" class="padding_box_10">전체 10px(PC,모바일공통)</div>
+											<div style="outline:1px solid red" class="padding_box_20">전체 20px(PC,모바일따로)</div>
+											<div style="outline:1px solid red" class="padding_box_30">전체 30px(PC,모바일따로)</div>
+											<div style="outline:1px solid red" class="padding_box_40">전체 40px(PC,모바일따로)</div>
+											<div style="outline:1px solid red" class="padding_box_50">전체 50px(PC,모바일따로)</div>
+										</div>
+									</div>
+								</div>
+								<textarea class="textarea_size">
+1.폰트 표현
+<p class="fontsize_12">홍길동</p>
+<p class="fontsize_13 font_bold">홍길동</p>
+<p class="fontsize_14 font_boldx2">홍길동</p>
+<p class="fontsize_15">홍길동</p>
+<p class="fontsize_16 color_emp_red">홍길동</p>
+<p class="fontsize_17 color_emp_black font_boldx2">홍길동</p>
+<p class="fontsize_18">홍길동</p>
+<p class="fontsize_19 color_emp_black">홍길동</p>
+<p class="fontsize_20">홍길동</p>
+
+2.상단마진(고정)
+<div style="background:powderblue" class="mt5">상단 5px(PC,모바일공통)</div>
+<div style="background:powderblue" class="mt10">상단 10px(PC,모바일공통)</div>
+<div style="background:powderblue" class="mt20">상단 20px(PC,모바일공통)</div>
+<div style="background:powderblue" class="mt30">상단 30px(PC,모바일공통)</div>
+<div style="background:powderblue" class="mt40">상단 40px(PC,모바일공통)</div>
+<div style="background:powderblue" class="mt50">상단 50px(PC,모바일공통)</div>
+<div style="background:powderblue" class="mt60">상단 60px(PC,모바일공통)</div>
+<div style="background:powderblue" class="mt70">상단 70px(PC,모바일공통)</div>
+<div style="background:powderblue" class="mt80">상단 80px(PC,모바일공통)</div>
+<div style="background:powderblue" class="mt90">상단 90px(PC,모바일공통)</div>
+<div style="background:powderblue" class="mt100">상단 100px(PC,모바일공통)</div>
+
+3.상단마진(반응형)
+<div style="background:pink" class="respon_mt10">상단 10px(PC,모바일따로)</div>
+<div style="background:pink" class="respon_mt20">상단 20px(PC,모바일따로)</div>
+<div style="background:pink" class="respon_mt30">상단 30px(PC,모바일따로)</div>
+<div style="background:pink" class="respon_mt40">상단 40px(PC,모바일따로)</div>
+<div style="background:pink" class="respon_mt50">상단 50px(PC,모바일따로)</div>
+<div style="background:pink" class="respon_mt60">상단 60px(PC,모바일따로)</div>
+<div style="background:pink" class="respon_mt70">상단 70px(PC,모바일따로)</div>
+<div style="background:pink" class="respon_mt80">상단 80px(PC,모바일따로)</div>
+<div style="background:pink" class="respon_mt90">상단 90px(PC,모바일따로)</div>
+<div style="background:pink" class="respon_mt100">상단 100px(PC,모바일따로)</div>
+
+3.하단마진(반응형)
+<div style="background:lightgreen" class="respon_mb10">하단 10px(PC,모바일따로)</div>
+<div style="background:lightgreen" class="respon_mb20">하단 20px(PC,모바일따로)</div>
+<div style="background:lightgreen" class="respon_mb30">하단 30px(PC,모바일따로)</div>
+<div style="background:lightgreen" class="respon_mb40">하단 40px(PC,모바일따로)</div>
+<div style="background:lightgreen" class="respon_mb50">하단 50px(PC,모바일따로)</div>
+<div style="background:lightgreen" class="respon_mb60">하단 60px(PC,모바일따로)</div>
+<div style="background:lightgreen" class="respon_mb70">하단 70px(PC,모바일따로)</div>
+<div style="background:lightgreen" class="respon_mb80">하단 80px(PC,모바일따로)</div>
+<div style="background:lightgreen" class="respon_mb90">하단 90px(PC,모바일따로)</div>
+<div style="background:lightgreen" class="respon_mb100">하단 100px(PC,모바일따로)</div>
+
+4.좌우마진(고정)
+<div style="background:orange" class="respon_mboth50">좌우 50px(PC,모바일공통)</div>
+<div style="background:orange" class="respon_mboth60">좌우 60px(PC,모바일공통)</div>
+<div style="background:orange" class="respon_mboth70">좌우 70px(PC,모바일공통)</div>
+<div style="background:orange" class="respon_mboth80">좌우 80px(PC,모바일공통)</div>
+<div style="background:orange" class="respon_mboth90">좌우 90px(PC,모바일공통)</div>
+<div style="background:orange" class="respon_mboth100">좌우 100px(PC,모바일공통)</div>
+
+5.전체패딩
+<div style="outline:1px solid red" class="padding_box_10_15">상하 10px 좌우 15px(PC,모바일공통)</div>
+<div style="outline:1px solid red" class="padding_box_10">전체 10px(PC,모바일공통)</div>
+<div style="outline:1px solid red" class="padding_box_20">전체 20px(PC,모바일따로)</div>
+<div style="outline:1px solid red" class="padding_box_30">전체 30px(PC,모바일따로)</div>
+<div style="outline:1px solid red" class="padding_box_40">전체 40px(PC,모바일따로)</div>
+<div style="outline:1px solid red" class="padding_box_50">전체 50px(PC,모바일따로)</div>
+								</textarea>
+							</div>
+							<!-- // source_his_item -->
+							<!-- source_his_item -->
+							<div class="source_his_item">
+								<p class="component_title">form 테이블</p>
+								<div class="component_dep_wrap">
+									<div class="component_dep">
+										<p class="component_title_sub">1.form 테이블 표현</p>
+										<div class="rendar_wrap">
+
+										</div>
+									</div>
+								</div>
+								<textarea class="textarea_size">
+								</textarea>
+							</div>
+							<!-- // source_his_item -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</body>
+
+</html>

@@ -66,9 +66,9 @@
 .getboard_box_title{font-size:rem(22);color:#333333;font-weight:700;line-height:1;}
 .getboard_box_content_row{margin-top:rem(15);}
 .getboard_box_content_list{
-    display:flex;flex-wrap:wrap;gap:rem(10);
+    display:flex;flex-wrap:wrap;gap:rem(10) 0;
     > li{
-        flex:1;min-width:0;
+        flex:0 0 50%;min-width:0;box-sizing:border-box;padding:0 rem(5);
         &:last-of-type{}
     }
 }
@@ -151,9 +151,17 @@
 
 .getpay_else_item{}
 .btn_getpay_submit{
-    border:rem(1) solid #638bff; border-radius:rem(10); font-size:rem(20);color:#5c84f9;font-weight:700;margin-top:rem(25);padding:rem(14) rem(35) rem(14);line-height:1; position:relative; display:block;
+    border:rem(1) solid #638bff; background-color:#fff; border-radius:rem(10); font-size:rem(20);color:#5c84f9;font-weight:700;margin-top:rem(25);padding:rem(14) rem(35) rem(14);line-height:1; position:relative; display:block; width:100%; box-sizing: border-box;
     &:after{display:block;content:'';width:rem(11);height:rem(11);border-right:rem(2) solid #638bff;border-top:rem(2) solid #638bff; transform: rotate(45deg) translateY(-50%);position:absolute;top:50%;right:rem(25);margin-top:rem(-3);}
+    &.type2{
+        border-color:#49a6fc;
+        &:after{border-color:#49a6fc;}
+        .getpay_submit_inner{}
+        .ico_btn_getpay{background-color:#49a6fc;}
+        .getpay_submit_text{color:#49a6fc;}
+    }
 }
+.submit_origin{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;appearance: none;cursor: pointer;}
 .window .btn_getpay_submit{padding:rem(14) rem(35) rem(15);}
 .getpay_submit_inner{display:flex;justify-content:center;align-items:center; gap:rem(6);}
 .ico_btn_getpay{display:flex;align-items:center;justify-content:center;width:rem(30);height:rem(30);background:#638bff;border-radius:100%;
@@ -166,7 +174,7 @@
     .btn_control_box{}
 }
 
-.btn_request_box{background:#f4f6f8;border:rem(1) solid #e4e9ee;border-radius:rem(10);display:block;text-align: center;padding:rem(18);}
+.btn_request_box{background:#f4f6f8;border:rem(1) solid #e4e9ee;border-radius:rem(10);display:block;text-align: center;padding:rem(18);position:relative;box-sizing: border-box; width:100%;}
 .btn_request_inner{
     display:flex;justify-content:center;align-items:center;gap:rem(8);
     .ico_request{display:block;width:rem(30);height:rem(30);border-radius:100%;background:#4a586e;flex:0 0 rem(30);
@@ -255,7 +263,7 @@
     .getboard_box_content_row{}
     .getboard_box_content_list{display:block;
         > li{
-            margin-bottom:rem(10);
+            margin-bottom:rem(10);padding:0;
             &:last-of-type{margin-bottom:0;}
         }
     }
