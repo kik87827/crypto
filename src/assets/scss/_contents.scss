@@ -511,10 +511,11 @@ select.form_select{color:#333;font-size:rem(16);border:1px solid #cccccc;height:
 .btn_submit_box_text{color:#fff;font-size:rem(20);/* font-weight:500; */display:inline-block;line-height:1;}
 .form_bottom_message{}
 
+.rendar_bar_flex_wrap{
+    display:flex;gap:rem(20); margin-bottom:rem(36);
+    .rendar_bar_wrap{flex:1;}
+}
 .rendar_bar_wrap{
-    
-    
-
     & + .both_rendar_box_wrap{margin-top:rem(40);}
     & + .data_box_list_wrap{margin-top:rem(25);}
 }
@@ -919,6 +920,10 @@ input.file_origin{
 
 
 @media (max-width:1023px){
+    .rendar_bar_flex_wrap{
+        margin-bottom:rem(20); flex-direction: column; gap:rem(10)
+    }
+
     .form_vitem_box{}
     .form_vitem_row{
         padding:rem(15);
@@ -1018,7 +1023,11 @@ input.file_origin{
 
 
         
-    .both_rendar_box_wrap{display:block;}
+    .both_rendar_box_wrap{display:block;
+        &.respon_type2{
+            display:flex;flex-direction: column-reverse;
+        }
+    }
     .both_rendar_box_cols{
         margin-bottom:rem(20);
         &:last-of-type{margin-bottom:0;}

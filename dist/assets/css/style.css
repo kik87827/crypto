@@ -2925,6 +2925,15 @@ select.form_select.ready_select {
   line-height: 1;
 }
 
+.rendar_bar_flex_wrap {
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 2.25rem;
+}
+.rendar_bar_flex_wrap .rendar_bar_wrap {
+  flex: 1;
+}
+
 .rendar_bar_wrap + .both_rendar_box_wrap {
   margin-top: 2.5rem;
 }
@@ -3889,6 +3898,11 @@ input.file_origin::file-selector-button {
   }
 }
 @media (max-width: 1023px) {
+  .rendar_bar_flex_wrap {
+    margin-bottom: 1.25rem;
+    flex-direction: column;
+    gap: 0.625rem;
+  }
   .form_vitem_row {
     padding: 0.9375rem;
   }
@@ -4022,6 +4036,10 @@ input.file_origin::file-selector-button {
   }
   .both_rendar_box_wrap {
     display: block;
+  }
+  .both_rendar_box_wrap.respon_type2 {
+    display: flex;
+    flex-direction: column-reverse;
   }
   .both_rendar_box_cols {
     margin-bottom: 1.25rem;

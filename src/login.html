@@ -16,11 +16,13 @@
                 selector: "#idpwPopup"
             });
 
-            //event
+            //event - 20231101
             document.querySelector(".btn_inline_ico").addEventListener("click",(e)=>{
                 e.currentTarget.classList.toggle("close_eye")
             });
-
+            document.querySelector("#btn_idpw_call").addEventListener("click",(e)=>{
+                idpwPopup.popupShow();
+            });
 
             // 퍼블확인용
             let url = window.location.href.split('?')[1];
