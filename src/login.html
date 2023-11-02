@@ -17,8 +17,17 @@
             });
 
             //event - 20231101
-            document.querySelector(".btn_inline_ico").addEventListener("click",(e)=>{
-                e.currentTarget.classList.toggle("close_eye")
+            document.querySelector("#btn_pw_viewer").addEventListener("click",(e)=>{
+                const thisEventItem = e.currentTarget;
+                const thisEventParentItem = thisEventItem.closest(".sform_inwrap");
+                const thisEventInput = thisEventParentItem.querySelector(".sform_input");
+                e.preventDefault();
+                thisEventItem.classList.toggle("close_eye");
+                if(thisEventItem.classList.contains("close_eye")){
+                    thisEventInput.setAttribute("type","text");
+                }else{
+                    thisEventInput.setAttribute("type","password");
+                }
             });
             document.querySelector("#btn_idpw_call").addEventListener("click",(e)=>{
                 idpwPopup.popupShow();

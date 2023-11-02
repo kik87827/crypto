@@ -16,11 +16,19 @@
                 selector: "#idpwPopup"
             });
 
-            //event
-            document.querySelector(".btn_inline_ico").addEventListener("click",(e)=>{
-                e.currentTarget.classList.toggle("close_eye")
+            //event - 20231101
+            document.querySelector("#btn_pw_viewer").addEventListener("click",(e)=>{
+                const thisEventItem = e.currentTarget;
+                const thisEventParentItem = thisEventItem.closest(".sform_inwrap");
+                const thisEventInput = thisEventParentItem.querySelector(".sform_input");
+                e.preventDefault();
+                thisEventItem.classList.toggle("close_eye");
+                if(thisEventItem.classList.contains("close_eye")){
+                    thisEventInput.setAttribute("type","text");
+                }else{
+                    thisEventInput.setAttribute("type","password");
+                }
             });
-
 
             // 퍼블확인용
             let url = window.location.href.split('?')[1];
