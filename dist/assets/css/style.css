@@ -3457,6 +3457,13 @@ select.form_select.ready_select {
 .data_box_list tr td.else_td {
   width: 1px;
 }
+.data_box_list tr.fail_type .data_price_text {
+  background: #fff5f5;
+  color: #f84242;
+}
+.data_box_list tr.fail_type .data_else_text {
+  color: #f84242;
+}
 
 .data_box_primary_item {
   display: flex;
@@ -3518,8 +3525,7 @@ select.form_select.ready_select {
 .data_else_text {
   font-size: 1rem;
   color: #5f5f5f;
-  line-height: 1;
-  font-weight: 500;
+  line-height: 1; /* font-weight:500; */
   display: inline-block;
   white-space: nowrap;
 }
