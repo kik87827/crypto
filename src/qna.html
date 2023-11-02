@@ -32,6 +32,21 @@
                     <h3 class="sub_title">Q&amp;A</h3>
                 </div>
                 <div class="sub_contents_row">
+                    <form id="form_element">
+                        <div class="sort_respon_field_wrap">
+                            <div class="sr_field_combo_cols">
+                                <div class="elements_cols"><select class="form_select"><option>10개씩 보기</option></select></div>
+                                <div class="elements_cols"><select class="form_select"><option>선택하세요</option></select></div>
+                            </div>
+                            <div class="sr_field_form_cols">
+                                <div class="elements_cols"><input type="text" class="form_input" placeholder="제목,내용"></div>
+                                <div class="elements_cols has_btn">
+                                    <input type="submit" class="btn_ico_submit">
+                                   <!--  <a href="javascript:;" class="btn_ico_submit"><span class="hdtext">검색</span></a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                     <div class="board_toggle_list_wrap">
                         <ul class="board_toggle_list">
                             <li>
@@ -212,6 +227,10 @@
             <!-- // sub contents -->
         </section>
         <script>
+            document.querySelector("#form_element").addEventListener("submit",(e)=>{
+                e.preventDefault();
+            });
+
             toggleListFunc();
         </script>
         @@include('./include/footer.html')

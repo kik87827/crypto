@@ -181,6 +181,10 @@
         img{vertical-align: middle;}
     }
 }
+.ico_request{display:block;width:rem(30);height:rem(30);border-radius:100%;flex:0 0 rem(30); background:#fff;
+    &.dtype2{background:#4a586e;}
+    img{vertical-align: middle;}
+}
 .btn_request_text{font-size:rem(20);color:#424454;line-height:1;font-weight:700;}
 
 .content_copy_wrap{background:#fcfcfc;border-top:rem(1) solid #ebebeb;border-bottom:rem(1) solid #ebebeb;margin-bottom:rem(147);

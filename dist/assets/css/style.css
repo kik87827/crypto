@@ -512,15 +512,6 @@ body ::-webkit-scrollbar-track {
   padding: 0.4375rem 0.625rem;
   border-radius: 6.25rem;
 }
-.hgroup_util_item .ico_nation {
-  display: block;
-  width: 1.3125rem;
-  height: 1.3125rem;
-  flex: 0 0 1.3125rem;
-  position: relative;
-  font-size: 0;
-  line-height: 0;
-}
 .hgroup_util_item .hgroup_util_text {
   font-size: 0.875rem;
   color: #333333;
@@ -528,6 +519,16 @@ body ::-webkit-scrollbar-track {
   line-height: 1;
   position: relative;
   top: 0;
+}
+
+.ico_nation {
+  display: block;
+  width: 1.3125rem;
+  height: 1.3125rem;
+  flex: 0 0 1.3125rem;
+  position: relative;
+  font-size: 0;
+  line-height: 0;
 }
 
 .hgroup_util_toggle_item {
@@ -977,7 +978,7 @@ body ::-webkit-scrollbar-track {
     font-size: 0.75rem;
     top: -0.0625rem;
   }
-  .hgroup_util_item .ico_nation {
+  .ico_nation {
     width: 0.875rem;
     flex-basis: 0.875rem;
     display: flex;
@@ -3102,6 +3103,7 @@ html.smooth {
 
 select.form_select {
   color: #333;
+  cursor: pointer;
   font-size: 1rem;
   border: 1px solid #cccccc;
   height: 3.125rem;
@@ -3274,7 +3276,8 @@ select.form_select.ready_select {
   align-items: center;
   justify-content: center;
 }
-.both_flex_ico_cols .ico_form {
+
+.ico_form {
   width: 5.75rem;
   height: 5.75rem;
   border: 1px solid #cccccc;
@@ -3470,7 +3473,8 @@ select.form_select.ready_select {
   align-items: center;
   gap: 0.9375rem;
 }
-.data_box_primary_item .ico_data_box {
+
+.ico_data_box {
   width: 2.25rem;
   height: 2.25rem;
   flex: 0 0 2.25rem;
@@ -4329,6 +4333,45 @@ input.file_origin::file-selector-button {
   display: inline-block;
 }
 
+.sort_respon_field_wrap {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 2.25rem;
+}
+.sort_respon_field_wrap .form_select {
+  height: 2.875rem;
+  line-height: 2.625rem;
+}
+.sort_respon_field_wrap .form_input {
+  height: 2.875rem;
+  line-height: 1;
+}
+
+.sr_field_combo_cols {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  min-width: 0;
+  align-items: center;
+}
+.sr_field_form_cols {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.btn_ico_submit {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  background: #455267 url("../images/ico_search_40.png") no-repeat 50% 50%/100% auto;
+  border-radius: 100%;
+  width: 2.5rem;
+  height: 2.5rem;
+  flex: 0 0 2.5rem;
+  color: transparent;
+  font-size: 0;
+}
+
 @media (max-width: 1280px) {
   .input_component_box {
     font-size: 0.875rem;
@@ -4420,7 +4463,7 @@ input.file_origin::file-selector-button {
     display: block;
     padding: 0.625rem 1.25rem 1.25rem;
   }
-  .both_flex_ico_cols .ico_form {
+  .ico_form {
     width: 3.75rem;
     height: 3.75rem;
     margin: 0 auto;
@@ -4469,7 +4512,7 @@ input.file_origin::file-selector-button {
     align-items: center;
     gap: 0.625rem;
   }
-  .data_box_primary_item .ico_data_box {
+  .ico_data_box {
     width: 1.5rem;
     height: 1.5rem;
     flex: 0 0 1.5rem;
@@ -4811,6 +4854,47 @@ input.file_origin::file-selector-button {
   .btn_add_item_text {
     font-size: 1.25rem;
   }
+  .sort_respon_field_wrap {
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+    gap: 0.625rem;
+  }
+  .sort_respon_field_wrap .form_select {
+    height: 2.5rem;
+    line-height: 2.375rem;
+    width: 100%;
+    min-width: 0;
+  }
+  .sort_respon_field_wrap .form_input {
+    height: 2.5rem;
+    width: 100%;
+    min-width: 0;
+  }
+  .sr_field_combo_cols {
+    flex: 1;
+    display: flex;
+    justify-content: baseline;
+    gap: 0.625rem;
+  }
+  .sr_field_combo_cols .elements_cols {
+    flex: 1;
+  }
+  .sr_field_form_cols {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .sr_field_form_cols .elements_cols {
+    flex: 1;
+  }
+  .sr_field_form_cols .elements_cols.has_btn {
+    flex: 0 0 2.25rem;
+  }
+  .btn_ico_submit {
+    width: 2.25rem;
+    height: 2.25rem;
+    flex: 0 0 2.25rem;
+  }
 }
 @media (max-width: 767px) {
   .history_item {
@@ -4840,6 +4924,11 @@ input.file_origin::file-selector-button {
     width: 2.5rem;
     height: 2.5rem;
     flex-basis: 2.5rem;
+  }
+  .ico_history_label {
+    width: 1.25rem;
+    height: 1.25rem;
+    flex-basis: 1.25rem;
   }
   .history_label_text {
     font-size: 0.875rem;
@@ -5247,6 +5336,20 @@ input.sform_input {
 
 .component_dep:last-of-type {
   margin-bottom: 0;
+}
+
+.icon_group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+}
+.icon_group * {
+  position: static !important;
+  margin: 0 !important;
+}
+.icon_group .btn_bottom_go {
+  position: static;
 }
 
 @media (max-width: 1023px) {
@@ -5843,6 +5946,21 @@ input.sform_input {
   flex: 0 0 1.875rem;
 }
 .btn_request_inner .ico_request img {
+  vertical-align: middle;
+}
+
+.ico_request {
+  display: block;
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 100%;
+  flex: 0 0 1.875rem;
+  background: #fff;
+}
+.ico_request.dtype2 {
+  background: #4a586e;
+}
+.ico_request img {
   vertical-align: middle;
 }
 

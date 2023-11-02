@@ -255,6 +255,14 @@
 											</ul>
 										</div>
 									</div>
+									<div class="component_dep">
+										<p class="component_title_sub">4. 아이콘 버튼</p>
+										<div class="rendar_wrap">
+											<input type="submit" class="btn_ico_submit">
+											<a href="javascript:;" class="btn_ico_submit"><span class="hdtext">검색</span></a>
+											<button class="btn_ico_submit"><span class="hdtext">검색</span></button>
+										</div>
+									</div>
 								</div>
 								<textarea class="textarea_size">
 <p class="component_title_sub">1.버튼 표현 모음</p>
@@ -434,6 +442,12 @@
 	<li class="paginate_button"><a href="#">5</a></li>
 	<li class="paginate_button next"><a href="#">다음</a></li>
 </ul>
+
+
+<p class="component_title_sub">4. 아이콘 버튼</p>
+<input type="submit" class="btn_ico_submit">
+<a href="javascript:;" class="btn_ico_submit"><span class="hdtext">검색</span></a>
+<button class="btn_ico_submit"><span class="hdtext">검색</span></button>
 								</textarea>
 							</div>
 							<!-- // source_his_item -->
@@ -444,18 +458,74 @@
 									<div class="component_dep">
 										<p class="component_title_sub">1.폼요소 표현 모음</p>
 										<div class="rendar_wrap">
-
+											<select class="form_select">
+												<option>10개씩 보기</option>
+											</select>
+											<br><br>
+											<select class="form_select max_wid100">
+												<option>10개씩 보기</option>
+											</select>
+											<br><br>
+											<div class="chkrd_item">
+												<input type="checkbox" class="chkrd today_check" id="today_check">
+												<label for="today_check" class="chkrd_label">오늘 하루 열지 않음</label>
+											</div>
+											<br><br>
+											<input type="text" class="form_input" name="pc_only_placeholder" placeholder="Please enter numbers only">
+											<br><br>
+											<input type="text" class="form_input reverse_place" name="pc_only_placeholder" placeholder="Please enter numbers only">
 										</div>
 									</div>
 									<div class="component_dep">
 										<p class="component_title_sub">2.검색영역 폼요소 표현</p>
 										<div class="rendar_wrap">
-
+											<div class="sort_respon_field_wrap">
+												<div class="sr_field_combo_cols">
+													<div class="elements_cols"><select class="form_select">
+															<option>10개씩 보기</option>
+														</select></div>
+													<div class="elements_cols"><select class="form_select">
+															<option>선택하세요</option>
+														</select></div>
+												</div>
+												<div class="sr_field_form_cols">
+													<div class="elements_cols"><input type="text" class="form_input" placeholder="제목,내용"></div>
+													<div class="elements_cols has_btn">
+														<input type="submit" class="btn_ico_submit">
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
 								<textarea class="textarea_size">
+<p class="component_title_sub">1.폼요소 표현 모음</p>
+<select class="form_select"><option>10개씩 보기</option></select>
+<br><br>
+<select class="form_select max_wid100"><option>10개씩 보기</option></select>
+<br><br>
+<div class="chkrd_item">
+	<input type="checkbox" class="chkrd today_check" id="today_check">
+	<label for="today_check" class="chkrd_label">오늘 하루 열지 않음</label>
+</div>
+<br><br>
+<input type="text" class="form_input" name="pc_only_placeholder" placeholder="Please enter numbers only">
+<br><br>
+<input type="text" class="form_input reverse_place" name="pc_only_placeholder" placeholder="Please enter numbers only">
 
+<p class="component_title_sub">2.검색영역 폼요소 표현</p>
+<div class="sort_respon_field_wrap">
+	<div class="sr_field_combo_cols">
+		<div class="elements_cols"><select class="form_select"><option>10개씩 보기</option></select></div>
+		<div class="elements_cols"><select class="form_select"><option>선택하세요</option></select></div>
+	</div>
+	<div class="sr_field_form_cols">
+		<div class="elements_cols"><input type="text" class="form_input" placeholder="제목,내용"></div>
+		<div class="elements_cols has_btn">
+			<input type="submit" class="btn_ico_submit">
+		</div>
+	</div>
+</div>
 								</textarea>
 							</div>
 							<!-- // source_his_item -->
@@ -475,12 +545,12 @@
 									</div>
 								</div>
 								<textarea class="textarea_size">
-									<div class="sc_tab_wrap">
-										<div class="sc_tab_group">
-											<a href="#" class="sc_tab"><span class="sc_tab_text">카드 충전 신청</span></a>
-											<a href="#" class="sc_tab active"><span class="sc_tab_text">카드 충전 신청내역</span></a>
-										</div>
-									</div>
+<div class="sc_tab_wrap">
+	<div class="sc_tab_group">
+		<a href="#" class="sc_tab"><span class="sc_tab_text">카드 충전 신청</span></a>
+		<a href="#" class="sc_tab active"><span class="sc_tab_text">카드 충전 신청내역</span></a>
+	</div>
+</div>
 								</textarea>
 							</div>
 							<!-- // source_his_item -->
@@ -539,12 +609,123 @@
 									<div class="component_dep">
 										<p class="component_title_sub">1.아이콘 표현 모음</p>
 										<div class="rendar_wrap">
+											<div class="icon_group">
+												<i class="ico_nation"><img src="./assets/images/ico_earth_img.png" class="ico_img" alt=""></i>
 
+												<div style="width:50px;height:50px;background:#434555; display:flex;align-items: center; justify-content: center;">
+													<i class="ico_maphome"><img src="./assets/images/ico_home.png" alt=""></i>
+												</div>
+
+												<a href="#" class="btn_bottom_go"></a>
+
+												<div style="width:80px;height:80px;background:#434555; display:flex;align-items: center; justify-content: center;">
+													<div class="wallet_profile_img">
+														<img src="./assets/images/ico_wallet.jpg" alt="">
+													</div>
+												</div>
+
+												<div style="width:40px;height:40px;background:#434555; display:flex;align-items: center; justify-content: center;">
+													<i class="ico_wallet_profile_para"><img src="./assets/images/ico_time.png" class="ico_img" alt=""></i>
+												</div>
+
+												<i class="getboard_box_title_ico"><img src="./assets/images/ico_mike.png" class="ico_img" alt=""></i>
+
+												<i class="ico_getboard_box_content"><img src="./assets/images/ico_docu.png" class="ico_img"></i>
+
+												<a href="#" class="btn_ico_more"><img src="./assets/images/ico_more.png" alt=""></a>
+
+
+												<div style="background:#638bff; display:flex;align-items: center; justify-content: center; padding:10px; gap:20px">
+													<i class="getpay_title_ico"><img src="./assets/images/ico_dollar.png" alt=""></i>
+													<i class="rendar_bar_ico"><img src="./assets/images/ico_dollar_34.png" class="ico_img" alt=""></i>
+													<i class="ico_getpay"><img src="./assets/images/ico_main_tail_01.png" class="ico_img" alt=""></i>
+													<i class="ico_getpay"><img src="./assets/images/ico_main_tail_02.png" class="ico_img" alt=""></i>
+													<i class="ico_getpay"><img src="./assets/images/ico_main_tail_03.png" class="ico_img" alt=""></i>
+													<i class="ico_getpay"><img src="./assets/images/ico_main_tail_04.png" class="ico_img" alt=""></i>
+												</div>
+												<div style="background:#638bff; display:flex;align-items: center; justify-content: center; padding:10px; gap:20px">
+													<i class="ico_request"><img src="./assets/images/ico_tong_60x60.png" alt=""></i>
+												</div>
+
+												<i class="ico_request" style="background-color:#4a586e;"><img src="./assets/images/ico_card.png" class="ico_img" alt=""></i>
+
+												<i class="ico_btn_getpay"><img src="./assets/images/ico_tong.png" class="ico_img" alt=""></i>
+
+												<i class="ico_data_box"><img src="./assets/images/ico_main_tail_gray_01.png" alt=""></i>
+												<i class="ico_data_box"><img src="./assets/images/ico_main_tail_gray_02.png" alt=""></i>
+												<i class="ico_data_box"><img src="./assets/images/ico_main_tail_gray_03.png" alt=""></i>
+
+												<i class="ico_history_label"><img src="./assets/images/ico_card_full_60x60.png" alt=""></i>
+
+												<i class="ico_finish"><img src="./assets/images/ico_check_56.png" alt=""></i>
+
+												<i class="ico_form"><img src="./assets/images/ico_men_92.png" alt=""></i>
+
+												<i class="ico_form"><img src="./assets/images/ico_pw_94.png" alt=""></i>
+
+												<input type="submit" class="btn_ico_submit">
+											</div>
 										</div>
 									</div>
 								</div>
 								<textarea class="textarea_size">
+<p class="component_title_sub">1.아이콘 표현 모음</p>
+<div class="icon_group">
+	<i class="ico_nation"><img src="./assets/images/ico_earth_img.png" class="ico_img" alt=""></i>
 
+	<div style="width:50px;height:50px;background:#434555; display:flex;align-items: center; justify-content: center;">
+		<i class="ico_maphome"><img src="./assets/images/ico_home.png" alt=""></i>
+	</div>
+	
+	<a href="#" class="btn_bottom_go"></a>
+
+	<div style="width:80px;height:80px;background:#434555; display:flex;align-items: center; justify-content: center;">
+		<div class="wallet_profile_img">
+			<img src="./assets/images/ico_wallet.jpg" alt="">
+		</div>
+	</div>
+
+	<div style="width:40px;height:40px;background:#434555; display:flex;align-items: center; justify-content: center;">
+		<i class="ico_wallet_profile_para"><img src="./assets/images/ico_time.png" class="ico_img" alt=""></i>
+	</div>
+
+	<i class="getboard_box_title_ico"><img src="./assets/images/ico_mike.png" class="ico_img" alt=""></i>
+
+	<i class="ico_getboard_box_content"><img src="./assets/images/ico_docu.png" class="ico_img"></i>
+
+	<a href="#" class="btn_ico_more"><img src="./assets/images/ico_more.png" alt=""></a>
+
+	
+	<div style="background:#638bff; display:flex;align-items: center; justify-content: center; padding:10px; gap:20px">
+		<i class="getpay_title_ico"><img src="./assets/images/ico_dollar.png" alt=""></i>
+		<i class="rendar_bar_ico"><img src="./assets/images/ico_dollar_34.png" class="ico_img" alt=""></i>
+		<i class="ico_getpay"><img src="./assets/images/ico_main_tail_01.png" class="ico_img" alt=""></i>
+		<i class="ico_getpay"><img src="./assets/images/ico_main_tail_02.png" class="ico_img" alt=""></i>
+		<i class="ico_getpay"><img src="./assets/images/ico_main_tail_03.png" class="ico_img" alt=""></i>
+		<i class="ico_getpay"><img src="./assets/images/ico_main_tail_04.png" class="ico_img" alt=""></i>
+	</div>
+	<div style="background:#638bff; display:flex;align-items: center; justify-content: center; padding:10px; gap:20px">
+		<i class="ico_request"><img src="./assets/images/ico_tong_60x60.png" alt=""></i>
+	</div>
+
+	<i class="ico_request" style="background-color:#4a586e;"><img src="./assets/images/ico_card.png" class="ico_img" alt=""></i>
+	
+	<i class="ico_btn_getpay"><img src="./assets/images/ico_tong.png" class="ico_img" alt=""></i>
+	
+	<i class="ico_data_box"><img src="./assets/images/ico_main_tail_gray_01.png" alt=""></i>
+	<i class="ico_data_box"><img src="./assets/images/ico_main_tail_gray_02.png" alt=""></i>
+	<i class="ico_data_box"><img src="./assets/images/ico_main_tail_gray_03.png" alt=""></i>
+
+	<i class="ico_history_label"><img src="./assets/images/ico_card_full_60x60.png" alt=""></i>
+
+	<i class="ico_finish"><img src="./assets/images/ico_check_56.png" alt=""></i>
+
+	<i class="ico_form"><img src="./assets/images/ico_men_92.png" alt=""></i>
+
+	<i class="ico_form"><img src="./assets/images/ico_pw_94.png" alt=""></i>
+
+	<input type="submit" class="btn_ico_submit">
+</div>
 								</textarea>
 							</div>
 							<!-- // source_his_item -->
@@ -555,12 +736,370 @@
 									<div class="component_dep">
 										<p class="component_title_sub">1.리스트 모음</p>
 										<div class="rendar_wrap">
-
+											<div class="data_box_list_wrap">
+												<table class="data_box_list">
+													<tbody>
+														<tr class="fail_type">
+															<td class="priamry_td">
+																<a href="javascript:;" class="data_box_primary_item">
+																	<i class="ico_data_box"><img src="./assets/images/ico_main_tail_gray_01.png" alt=""></i>
+																	<span class="data_box_primary_label">코인에서 USDT로 변환</span>
+																</a>
+															</td>
+															<td class="price_td"><span class="data_price_text">1,000</span></td>
+															<td class="else_td"><span class="data_else_text">2023-09-21</span></td>
+														</tr>
+														<tr class="fail_type">
+															<td class="priamry_td">
+																<a href="javascript:;" class="data_box_primary_item">
+																	<i class="ico_data_box"><img src="./assets/images/ico_main_tail_gray_02.png" alt=""></i>
+																	<span class="data_box_primary_label">Sss3258 선물하기</span>
+																</a>
+															</td>
+															<td class="price_td"><span class="data_price_text">1,000</span></td>
+															<td class="else_td"><span class="data_else_text">2023-09-21</span></td>
+														</tr>
+														<tr>
+															<td class="priamry_td">
+																<a href="javascript:;" class="data_box_primary_item">
+																	<i class="ico_data_box"><img src="./assets/images/ico_main_tail_gray_03.png" alt=""></i>
+																	<span class="data_box_primary_label">코인충전</span>
+																</a>
+															</td>
+															<td class="price_td"><span class="data_price_text">1,000</span></td>
+															<td class="else_td"><span class="data_else_text">2023-09-21</span></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<br>
+											<div class="data_box_list_wrap type3">
+												<table class="data_box_list">
+													<tbody>
+														<tr>
+															<td class="priamry_td">
+																<a href="javascript:;" class="data_box_primary_item">
+																	<i class="ico_data_box"><img src="./assets/images/ico_main_tail_gray_01.png" alt=""></i>
+																	<span class="data_box_primary_label">코인에서 USDT로 변환</span>
+																</a>
+															</td>
+															<td class="price_td"><span class="data_price_text">1,000</span></td>
+															<td class="else_td"><span class="data_else_text">2023-09-21</span></td>
+														</tr>
+														<tr class="fail_type">
+															<td class="priamry_td">
+																<a href="javascript:;" class="data_box_primary_item">
+																	<i class="ico_data_box"><img src="./assets/images/ico_main_tail_gray_02.png" alt=""></i>
+																	<span class="data_box_primary_label">Sss3258 선물하기</span>
+																</a>
+															</td>
+															<td class="price_td"><span class="data_price_text">1,000</span></td>
+															<td class="else_td"><span class="data_else_text">2023-09-21</span></td>
+														</tr>
+														<tr>
+															<td class="priamry_td">
+																<a href="javascript:;" class="data_box_primary_item">
+																	<i class="ico_data_box"><img src="./assets/images/ico_main_tail_gray_03.png" alt=""></i>
+																	<span class="data_box_primary_label">코인충전</span>
+																</a>
+															</td>
+															<td class="price_td"><span class="data_price_text">1,000</span></td>
+															<td class="else_td"><span class="data_else_text">2023-09-21</span></td>
+														</tr>
+													</tbody>
+												</table>
+												<div class="data_box_btn_row">
+													<a href="#" class="btn_link_box"><span class="btn_link_box_text">MORE</span></a>
+												</div>
+											</div>
+											<br><br>
+											<div class="history_item_list_wrap">
+												<ul class="history_item_list">
+													<li>
+														<div class="history_item">
+															<div class="history_label_cols">
+																<div class="history_label">
+																	<i class="ico_history_label"><img src="./assets/images/ico_card_full_60x60.png" alt=""></i>
+																	<span class="history_label_text">카드충전</span>
+																</div>
+															</div>
+															<div class="history_data_cols">
+																<div class="hdata_item">
+																	<div class="hdata_key">status</div>
+																	<div class="hdata_value"><span class="current_textbox">Success</span></div>
+																</div>
+																<div class="hdata_item">
+																	<span class="data_price_text">1,000</span>
+																</div>
+																<div class="hdata_item">
+																	<span class="data_else_text">2023-09-21</span>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="history_item fail_type">
+															<div class="history_label_cols">
+																<div class="history_label">
+																	<i class="ico_history_label"><img src="./assets/images/ico_card_full_60x60.png" alt=""></i>
+																	<span class="history_label_text">카드충전</span>
+																</div>
+															</div>
+															<div class="history_data_cols">
+																<div class="hdata_item has_keyvalue">
+																	<div class="hdata_keyvalue_g">
+																		<div class="hdata_key">실패사유</div>
+																		<div class="hdata_value"><span class="current_textbox">여권사진을 더 선명하게 보내주세요.</span></div>
+																	</div>
+																	<div class="hdata_keyvalue_g">
+																		<div class="hdata_key">status</div>
+																		<div class="hdata_value"><span class="current_textbox">FAILED</span></div>
+																	</div>
+																</div>
+																<div class="hdata_item">
+																	<span class="data_price_text">1,000</span>
+																</div>
+																<div class="hdata_item">
+																	<span class="data_else_text">2023-09-21</span>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="history_item">
+															<div class="history_label_cols">
+																<div class="history_label">
+																	<i class="ico_history_label"><img src="./assets/images/ico_card_full_60x60.png" alt=""></i>
+																	<span class="history_label_text">카드충전</span>
+																</div>
+															</div>
+															<div class="history_data_cols">
+																<div class="hdata_item">
+																	<div class="hdata_key">status</div>
+																	<div class="hdata_value"><span class="current_textbox">Success</span></div>
+																</div>
+																<div class="hdata_item">
+																	<span class="data_price_text">1,000</span>
+																</div>
+																<div class="hdata_item">
+																	<span class="data_else_text">2023-09-21</span>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="history_item fail_type">
+															<div class="history_label_cols">
+																<div class="history_label">
+																	<i class="ico_history_label"><img src="./assets/images/ico_card_full_60x60.png" alt=""></i>
+																	<span class="history_label_text">카드충전</span>
+																</div>
+															</div>
+															<div class="history_data_cols">
+																<div class="hdata_item has_keyvalue">
+																	<div class="hdata_keyvalue_g">
+																		<div class="hdata_key">실패사유</div>
+																		<div class="hdata_value"><span class="current_textbox">여권사진을 더 선명하게 보내주세요.</span></div>
+																	</div>
+																	<div class="hdata_keyvalue_g">
+																		<div class="hdata_key">status</div>
+																		<div class="hdata_value"><span class="current_textbox">FAILED</span></div>
+																	</div>
+																</div>
+																<div class="hdata_item">
+																	<span class="data_price_text">1,000</span>
+																</div>
+																<div class="hdata_item">
+																	<span class="data_else_text">2023-09-21</span>
+																</div>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
 										</div>
 									</div>
 								</div>
 								<textarea class="textarea_size">
-
+<div class="data_box_list_wrap">
+	<table class="data_box_list">
+		<tbody>
+			<tr class="fail_type">
+				<td class="priamry_td">
+					<a href="javascript:;" class="data_box_primary_item">
+						<i class="ico_data_box"><img src="./assets/images/ico_main_tail_gray_01.png" alt=""></i>
+						<span class="data_box_primary_label">코인에서 USDT로 변환</span>
+					</a>
+				</td>
+				<td class="price_td"><span class="data_price_text">1,000</span></td>
+				<td class="else_td"><span class="data_else_text">2023-09-21</span></td>
+			</tr>
+			<tr class="fail_type">
+				<td class="priamry_td">
+					<a href="javascript:;" class="data_box_primary_item">
+						<i class="ico_data_box"><img src="./assets/images/ico_main_tail_gray_02.png" alt=""></i>
+						<span class="data_box_primary_label">Sss3258 선물하기</span>
+					</a>
+				</td>
+				<td class="price_td"><span class="data_price_text">1,000</span></td>
+				<td class="else_td"><span class="data_else_text">2023-09-21</span></td>
+			</tr>
+			<tr>
+				<td class="priamry_td">
+					<a href="javascript:;" class="data_box_primary_item">
+						<i class="ico_data_box"><img src="./assets/images/ico_main_tail_gray_03.png" alt=""></i>
+						<span class="data_box_primary_label">코인충전</span>
+					</a>
+				</td>
+				<td class="price_td"><span class="data_price_text">1,000</span></td>
+				<td class="else_td"><span class="data_else_text">2023-09-21</span></td>
+			</tr>
+		</tbody>
+	</table>
+</div>	
+<br>
+<div class="data_box_list_wrap type3">
+	<table class="data_box_list">
+		<tbody><tr>
+			<td class="priamry_td">
+				<a href="javascript:;" class="data_box_primary_item">
+					<i class="ico_data_box"><img src="./assets/images/ico_main_tail_gray_01.png" alt=""></i>
+					<span class="data_box_primary_label">코인에서 USDT로 변환</span>
+				</a>
+			</td>
+			<td class="price_td"><span class="data_price_text">1,000</span></td>
+			<td class="else_td"><span class="data_else_text">2023-09-21</span></td>
+		</tr>
+		<tr class="fail_type">
+			<td class="priamry_td">
+				<a href="javascript:;" class="data_box_primary_item">
+					<i class="ico_data_box"><img src="./assets/images/ico_main_tail_gray_02.png" alt=""></i>
+					<span class="data_box_primary_label">Sss3258 선물하기</span>
+				</a>
+			</td>
+			<td class="price_td"><span class="data_price_text">1,000</span></td>
+			<td class="else_td"><span class="data_else_text">2023-09-21</span></td>
+		</tr>
+		<tr>
+			<td class="priamry_td">
+				<a href="javascript:;" class="data_box_primary_item">
+					<i class="ico_data_box"><img src="./assets/images/ico_main_tail_gray_03.png" alt=""></i>
+					<span class="data_box_primary_label">코인충전</span>
+				</a>
+			</td>
+			<td class="price_td"><span class="data_price_text">1,000</span></td>
+			<td class="else_td"><span class="data_else_text">2023-09-21</span></td>
+		</tr>
+	</tbody></table>
+	<div class="data_box_btn_row">
+		<a href="#" class="btn_link_box"><span class="btn_link_box_text">MORE</span></a>
+	</div>
+</div>
+<br><br>
+<div class="history_item_list_wrap">
+	<ul class="history_item_list">
+		<li>
+			<div class="history_item">
+				<div class="history_label_cols">
+					<div class="history_label">
+						<i class="ico_history_label"><img src="./assets/images/ico_card_full_60x60.png" alt=""></i>
+						<span class="history_label_text">카드충전</span>
+					</div>
+				</div>
+				<div class="history_data_cols">
+					<div class="hdata_item">
+						<div class="hdata_key">status</div>
+						<div class="hdata_value"><span class="current_textbox">Success</span></div>
+					</div>
+					<div class="hdata_item">
+						<span class="data_price_text">1,000</span>
+					</div>
+					<div class="hdata_item">
+						<span class="data_else_text">2023-09-21</span>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="history_item fail_type">
+				<div class="history_label_cols">
+					<div class="history_label">
+						<i class="ico_history_label"><img src="./assets/images/ico_card_full_60x60.png" alt=""></i>
+						<span class="history_label_text">카드충전</span>
+					</div>
+				</div>
+				<div class="history_data_cols">
+					<div class="hdata_item has_keyvalue">
+						<div class="hdata_keyvalue_g">
+							<div class="hdata_key">실패사유</div>
+							<div class="hdata_value"><span class="current_textbox">여권사진을 더 선명하게 보내주세요.</span></div>
+						</div>
+						<div class="hdata_keyvalue_g">
+							<div class="hdata_key">status</div>
+							<div class="hdata_value"><span class="current_textbox">FAILED</span></div>
+						</div>
+					</div>
+					<div class="hdata_item">
+						<span class="data_price_text">1,000</span>
+					</div>
+					<div class="hdata_item">
+						<span class="data_else_text">2023-09-21</span>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="history_item">
+				<div class="history_label_cols">
+					<div class="history_label">
+						<i class="ico_history_label"><img src="./assets/images/ico_card_full_60x60.png" alt=""></i>
+						<span class="history_label_text">카드충전</span>
+					</div>
+				</div>
+				<div class="history_data_cols">
+					<div class="hdata_item">
+						<div class="hdata_key">status</div>
+						<div class="hdata_value"><span class="current_textbox">Success</span></div>
+					</div>
+					<div class="hdata_item">
+						<span class="data_price_text">1,000</span>
+					</div>
+					<div class="hdata_item">
+						<span class="data_else_text">2023-09-21</span>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="history_item fail_type">
+				<div class="history_label_cols">
+					<div class="history_label">
+						<i class="ico_history_label"><img src="./assets/images/ico_card_full_60x60.png" alt=""></i>
+						<span class="history_label_text">카드충전</span>
+					</div>
+				</div>
+				<div class="history_data_cols">
+					<div class="hdata_item has_keyvalue">
+						<div class="hdata_keyvalue_g">
+							<div class="hdata_key">실패사유</div>
+							<div class="hdata_value"><span class="current_textbox">여권사진을 더 선명하게 보내주세요.</span></div>
+						</div>
+						<div class="hdata_keyvalue_g">
+							<div class="hdata_key">status</div>
+							<div class="hdata_value"><span class="current_textbox">FAILED</span></div>
+						</div>
+					</div>
+					<div class="hdata_item">
+						<span class="data_price_text">1,000</span>
+					</div>
+					<div class="hdata_item">
+						<span class="data_else_text">2023-09-21</span>
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
 								</textarea>
 							</div>
 							<!-- // source_his_item -->
@@ -725,11 +1264,264 @@
 									<div class="component_dep">
 										<p class="component_title_sub">1.form 테이블 표현</p>
 										<div class="rendar_wrap">
+											<div class="both_flex_form">
+												<div class="both_flex_ico_cols">
+													<i class="ico_form"><img src="./assets/images/ico_men_92.png" alt=""></i>
+												</div>
+												<div class="both_flex_form_cols">
+													<div class="form_fieldset_table_wrap">
+														<table class="form_fieldset_table">
+															<tbody>
+																<tr>
+																	<th><span class="form_label">별명</span></th>
+																	<td><input type="text" class="form_input" value="soonsin"></td>
+																</tr>
+																<tr>
+																	<th><span class="form_label">이메일</span></th>
+																	<td><input type="text" class="form_input" value="mj3738436"></td>
+																</tr>
+																<tr>
+																	<th><span class="form_label">휴대폰</span></th>
+																	<td>
+																		<!-- <div class="input_component_box">
+								<div class="input_comp_cols"><input type="text" class="input_comp_item" value="01000000001"></div>
+								<div class="placeholder_comp_cols"><p class="input_comp_placeholder">Please enter numbers only</p></div>
+							</div> -->
+																		<div class="form_input_group">
+																			<input type="text" class="form_input reverse_place" name="pc_only_placeholder" placeholder="Please enter numbers only" value="01000000001">
+																			<p class="mobile_place_para">Please enter numbers only</p>
+																		</div>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
 
+											<br><br>
+
+											<div class="rendar_fieldset_row">
+												<div class="rendar_fieldset_title_row">
+													<p class="rendar_fieldset_title">선물보내는 회원정보</p>
+												</div>
+												<div class="rendar_fieldset_content_row">
+													<div class="form_fieldset_table_wrap">
+														<table class="form_fieldset_table">
+															<tbody>
+																<tr>
+																	<th><span class="form_label">선물머니선택</span></th>
+																	<td><select class="form_select">
+																			<option>COIN</option>
+																		</select></td>
+																</tr>
+																<tr>
+																	<th><span class="form_label">선물수량</span></th>
+																	<td>
+																		<div class="form_input_group">
+																			<input type="text" class="form_input reverse_place" name="pc_only_placeholder" placeholder="Please enter numbers only" value="01000001111">
+																			<p class="mobile_place_para">Please enter numbers only</p>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<th><span class="form_label">결제비밀번호</span></th>
+																	<td><input type="password" class="form_input" value="*****"></td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+
+
+											<br><br><br>
+
+											<div class="mid_form_table_wrap">
+												<table class="mid_form_table">
+													<tbody>
+														<tr>
+															<th><span class="mid_form_label important">아이디</span></th>
+															<td>
+																<div class="form_input_group">
+																	<input type="text" class="form_input reverse_place place_small" name="pc_only_placeholder" placeholder="Please enter 6 to 16 English characters and numbers without spaces">
+																	<p class="mobile_place_para">Please enter 6 to 16 English characters and numbers without spaces</p>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<th><span class="mid_form_label important">닉네임</span></th>
+															<td><input type="text" class="form_input"></td>
+														</tr>
+														<tr>
+															<th><span class="mid_form_label important">비밀번호</span></th>
+															<td>
+																<div class="form_input_group">
+																	<input type="password" class="form_input reverse_place place_small" name="pc_only_placeholder" placeholder="Mix 8 to 20 English characters, numbers, and special characters (~!@#^_*)">
+																	<p class="mobile_place_para">Mix 8 to 20 English characters, numbers, and special characters (~!@#^_*)</p>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<th><span class="mid_form_label important type2">비밀번호 <br class="mb_br">확인</span></th>
+															<td>
+																<div class="form_input_group">
+																	<input type="password" class="form_input reverse_place place_small" name="pc_only_placeholder" placeholder="Please enter your password one more time">
+																	<p class="mobile_place_para">Please enter your password one more time</p>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<th><span class="mid_form_label important">초대코드</span></th>
+															<td><input type="text" class="form_input"></td>
+														</tr>
+														<tr>
+															<th><span class="mid_form_label">이메일</span></th>
+															<td><input type="text" class="form_input"></td>
+														</tr>
+														<tr>
+															<th><span class="mid_form_label">휴대폰번호 </span></th>
+															<td>
+																<div class="form_input_group">
+																	<input type="text" class="form_input reverse_place place_small" name="pc_only_placeholder" placeholder="Please enter numbers only">
+																	<p class="mobile_place_para">Please enter numbers only</p>
+																</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
 										</div>
 									</div>
 								</div>
 								<textarea class="textarea_size">
+<div class="both_flex_form">
+	<div class="both_flex_ico_cols">
+		<i class="ico_form"><img src="./assets/images/ico_men_92.png" alt=""></i>
+	</div>
+	<div class="both_flex_form_cols">
+		<div class="form_fieldset_table_wrap">
+			<table class="form_fieldset_table">
+				<tbody>
+					<tr>
+						<th><span class="form_label">별명</span></th>
+						<td><input type="text" class="form_input" value="soonsin"></td>
+					</tr>
+					<tr>
+						<th><span class="form_label">이메일</span></th>
+						<td><input type="text" class="form_input" value="mj3738436"></td>
+					</tr>
+					<tr>
+						<th><span class="form_label">휴대폰</span></th>
+						<td>
+							<!-- <div class="input_component_box">
+								<div class="input_comp_cols"><input type="text" class="input_comp_item" value="01000000001"></div>
+								<div class="placeholder_comp_cols"><p class="input_comp_placeholder">Please enter numbers only</p></div>
+							</div> -->
+							<div class="form_input_group">
+								<input type="text" class="form_input reverse_place" name="pc_only_placeholder" placeholder="Please enter numbers only" value="01000000001">
+								<p class="mobile_place_para">Please enter numbers only</p>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+<br><br>
+
+<div class="rendar_fieldset_row">
+	<div class="rendar_fieldset_title_row">
+		<p class="rendar_fieldset_title">선물보내는 회원정보</p>
+	</div>
+	<div class="rendar_fieldset_content_row">
+		<div class="form_fieldset_table_wrap">
+			<table class="form_fieldset_table">
+				<tbody>
+					<tr>
+						<th><span class="form_label">선물머니선택</span></th>
+						<td><select class="form_select">
+								<option>COIN</option>
+							</select></td>
+					</tr>
+					<tr>
+						<th><span class="form_label">선물수량</span></th>
+						<td>
+							<div class="form_input_group">
+								<input type="text" class="form_input reverse_place" name="pc_only_placeholder" placeholder="Please enter numbers only" value="01000001111">
+								<p class="mobile_place_para">Please enter numbers only</p>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th><span class="form_label">결제비밀번호</span></th>
+						<td><input type="password" class="form_input" value="*****"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+
+<br><br><br>
+
+<div class="mid_form_table_wrap">
+	<table class="mid_form_table">
+		<tbody>
+			<tr>
+				<th><span class="mid_form_label important">아이디</span></th>
+				<td>
+					<div class="form_input_group">
+						<input type="text" class="form_input reverse_place place_small" name="pc_only_placeholder" placeholder="Please enter 6 to 16 English characters and numbers without spaces">
+						<p class="mobile_place_para">Please enter 6 to 16 English characters and numbers without spaces</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<th><span class="mid_form_label important">닉네임</span></th>
+				<td><input type="text" class="form_input"></td>
+			</tr>
+			<tr>
+				<th><span class="mid_form_label important">비밀번호</span></th>
+				<td>
+					<div class="form_input_group">
+						<input type="password" class="form_input reverse_place place_small" name="pc_only_placeholder" placeholder="Mix 8 to 20 English characters, numbers, and special characters (~!@#^_*)">
+						<p class="mobile_place_para">Mix 8 to 20 English characters, numbers, and special characters (~!@#^_*)</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<th><span class="mid_form_label important type2">비밀번호 <br class="mb_br">확인</span></th>
+				<td>
+					<div class="form_input_group">
+						<input type="password" class="form_input reverse_place place_small" name="pc_only_placeholder" placeholder="Please enter your password one more time">
+						<p class="mobile_place_para">Please enter your password one more time</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<th><span class="mid_form_label important">초대코드</span></th>
+				<td><input type="text" class="form_input"></td>
+			</tr>
+			<tr>
+				<th><span class="mid_form_label">이메일</span></th>
+				<td><input type="text" class="form_input"></td>
+			</tr>
+			<tr>
+				<th><span class="mid_form_label">휴대폰번호 </span></th>
+				<td>
+					<div class="form_input_group">
+						<input type="text" class="form_input reverse_place place_small" name="pc_only_placeholder" placeholder="Please enter numbers only">
+						<p class="mobile_place_para">Please enter numbers only</p>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
 								</textarea>
 							</div>
 							<!-- // source_his_item -->
