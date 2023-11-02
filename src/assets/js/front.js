@@ -66,6 +66,8 @@ function layoutFunc() {
   const nav_depth_list_wrap = document.querySelector(".nav_depth_list_wrap");
   const btn_hgroup_menu = document.querySelector(".btn_hgroup_menu");
   const hgroup_util_toggle_item = document.querySelectorAll(".hgroup_util_toggle_item");
+  const hgroup_util_item = document.querySelectorAll(".hgroup_util_toggle_item .hgroup_util_item");
+  const hgroup_option_item = document.querySelectorAll(".hgroup_option_item");
   let between_margin = 20;
   
   mbTotal();
@@ -80,11 +82,23 @@ function layoutFunc() {
   });
 
   function utilFunc(){
-    if(!!hgroup_util_toggle_item){
-      hgroup_util_toggle_item.forEach((item)=>{
+    if(!!hgroup_util_toggle_item && !!hgroup_option_item && !!hgroup_util_item){
+      hgroup_util_item.forEach((item)=>{
+        item.addEventListener("click",(e)=>{
+          const thisItem = e.currentTarget;
+          const thisItemParent = thisItem.closest(".hgroup_util_toggle_item");
+          e.preventDefault();
+          thisItemParent.classList.toggle("active");
+        });
+      });
+      hgroup_option_item.forEach((item)=>{
         item.addEventListener("click",(e)=>{
           e.preventDefault();
-          e.currentTarget.classList.toggle("active");
+          const thisItem = e.currentTarget;
+          const thisItemParent = thisItem.closest(".hgroup_util_toggle_item");
+          const thisItemTargetText = thisItemParent.querySelector(".hgroup_util_text");
+          thisItemParent.classList.remove("active");
+          thisItemTargetText.textContent = thisItem.textContent;
         });
       });
       document.addEventListener("click", function(e) {
