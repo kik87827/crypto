@@ -64,17 +64,43 @@ function layoutFunc() {
   const nav_menu = document.querySelectorAll(".nav_menu");
   const nav_depth_list_wrap = document.querySelector(".nav_depth_list_wrap");
   const btn_hgroup_menu = document.querySelector(".btn_hgroup_menu");
+  const hgroup_util_toggle_item = document.querySelectorAll(".hgroup_util_toggle_item");
   let between_margin = 20;
 
   mbTotal();
   action();
   mapMenu();
   pcMenuFunc();
+  utilFunc();
 
 
   resizeAction(() => {
     action();
-  })
+  });
+
+  function utilFunc() {
+    if (!!hgroup_util_toggle_item) {
+      hgroup_util_toggle_item.forEach((item) => {
+        item.addEventListener("click", (e) => {
+          e.preventDefault();
+          e.currentTarget.classList.toggle("active");
+        });
+      });
+      document.addEventListener("click", function(e) {
+        if (!e.target.closest(".hgroup_util_toggle_item")) {
+          hgroup_util_toggle_item.forEach(function(elem) {
+            elem.classList.remove("active");
+          });
+        }
+
+        // submenu_one_active.classList.remove("active");
+        // submenu_two_list_wrap_active.style.height = "0px";
+        // timerid = setTimeout(function(){
+        //   submenu_two_list_wrap_active.classList.remove("active");
+        // },510);
+      }, false);
+    }
+  }
 
   function action() {
     let toplogoWidth = !!toplogo ? toplogo.getBoundingClientRect().width : 0;
