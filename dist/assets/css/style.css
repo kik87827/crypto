@@ -552,7 +552,7 @@ body ::-webkit-scrollbar-track {
   border-right: 1px solid #7b7b7b;
   border-bottom: 1px solid #7b7b7b;
   position: absolute;
-  top: 0.75rem;
+  top: 0.65625rem;
   right: 0.8125rem;
   transform: rotate(45deg);
 }
@@ -1011,7 +1011,7 @@ body ::-webkit-scrollbar-track {
     right: 0.9375rem;
   }
   .full_header_wrap .hgroup_util_wrap .hgroup_util_item {
-    position: static;
+    position: relative;
   }
   .full_header_wrap .toplogo {
     transform: translateX(0);
@@ -1024,6 +1024,11 @@ body ::-webkit-scrollbar-track {
   }
   .full_header_pixin .hgroup_util_wrap {
     right: 0.9375rem;
+  }
+  .full_header_pixin .hgroup_util_wrap .hgroup_util_toggle_item {
+    position: relative;
+    top: 0;
+    left: 0;
   }
   .full_mid_wrap {
     padding: 1.875rem 0.9375rem;
