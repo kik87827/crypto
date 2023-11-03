@@ -518,7 +518,7 @@ body ::-webkit-scrollbar-track {
   display: inline-block;
   line-height: 1;
   position: relative;
-  top: 0;
+  top: -1px;
 }
 
 .ico_nation {

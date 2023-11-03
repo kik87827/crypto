@@ -46,7 +46,7 @@ body ::-webkit-scrollbar-track {background-color: #fff;border-radius: rem(10);bo
 }
 .hgroup_util_item{
     display:flex;align-items:center;white-space:nowrap;gap:rem(7); border:rem(1) solid #d0d0d0;padding:rem(7) rem(10);border-radius:rem(100);
-    .hgroup_util_text{font-size:rem(14);color:#333333;display:inline-block;line-height:1;position:relative;top:0;}
+    .hgroup_util_text{font-size:rem(14);color:#333333;display:inline-block;line-height:1;position:relative;top:-1px;}
 }
 .ico_nation{display:block;width:rem(21);height:rem(21);flex:0 0 rem(21);position:relative;font-size:0;line-height:0;}
 
