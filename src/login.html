@@ -38,6 +38,10 @@
             let url_2 = url !== undefined ? url.split('#')[0] : null;
             if(url_2 === "popup"){
                 idpwPopup.popupShow();
+            }else if(url_2 === "warn"){
+                document.querySelector("#form_case").querySelector(".sform_inwrap").classList.add("warn_wrap");
+                document.querySelector("#form_case").querySelector(".sform_input").value = "test12345";
+                document.querySelector("#form_case").querySelector(".warn_message").style.display = "block";
             }
         </script>
         @@include('./include/footer.html')

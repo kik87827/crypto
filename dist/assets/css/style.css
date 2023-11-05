@@ -1759,6 +1759,10 @@ html.smooth {
   width: 100% !important;
 }
 
+.align_left {
+  text-align: left !important;
+}
+
 .align_right {
   text-align: right !important;
 }
@@ -3667,8 +3671,7 @@ input.input_comp_item {
   justify-content: space-between;
   align-items: center;
   padding: 1.25rem 2.1875rem;
-  gap: 1.25rem;
-  flex-wrap: wrap;
+  gap: 3.125rem; /*  flex-wrap:wrap; */
 }
 .history_item.fail_type {
   border-color: #ff9696;
@@ -3700,9 +3703,11 @@ input.input_comp_item {
   border-color: #e7e7e7 !important;
 }
 .history_data_cols {
+  flex: 1;
   display: flex;
   align-items: center;
   gap: 3.125rem;
+  justify-content: flex-end;
 }
 
 .history_label {
@@ -3728,6 +3733,7 @@ input.input_comp_item {
   color: #333333;
   display: inline-block;
   line-height: 1;
+  white-space: nowrap;
 }
 
 .history_who {
@@ -3742,7 +3748,11 @@ input.input_comp_item {
   flex-wrap: wrap;
 }
 .hdata_item.has_keyvalue {
-  gap: 0.625rem 1.25rem;
+  flex: 1;
+  gap: 0.75rem 1.25rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: end;
 }
 .hdata_keyvalue_g {
   display: flex;
@@ -3757,6 +3767,18 @@ input.input_comp_item {
   display: inline-block;
   position: relative; /* top:-1px; */
   white-space: nowrap;
+}
+
+.hdata_value.message_value .current_textbox {
+  border: 1px solid #f84242;
+  border-radius: 8px;
+  color: #f84242;
+  white-space: normal;
+  text-align: left;
+  line-height: 1.3;
+  box-sizing: border-box;
+  max-width: 580px;
+  padding: 0.3125rem 0.9375rem;
 }
 
 .current_textbox {
@@ -3929,6 +3951,16 @@ input.form_input.reverse_place.place_small::-moz-placeholder {
 input.form_input.reverse_place.place_small::placeholder {
   font-size: 0.8125rem;
 }
+input.form_input.warn_type {
+  border: 2px solid #ff0000;
+}
+input.form_input + .warn_message {
+  margin-bottom: 0;
+}
+
+.form_input_group .warn_message {
+  margin-bottom: 0;
+}
 
 .btn_inline_box {
   display: inline-flex;
@@ -4098,10 +4130,14 @@ input.file_origin::file-selector-button {
 .sc_form_table th, .sc_form_table td {
   border-bottom: 1px solid #e7e7e7;
   text-align: left;
+  vertical-align: top;
 }
 .sc_form_table th {
   width: 1px;
   padding: 0.625rem 1.25rem;
+}
+.sc_form_table th .sc_form_label {
+  padding-top: 0.75rem;
 }
 .sc_form_table td {
   padding: 0.625rem 1.25rem;
@@ -4588,6 +4624,7 @@ input.file_origin::file-selector-button {
   .history_item {
     border-radius: 0.625rem;
     padding: 0.9375rem 1.25rem;
+    flex-wrap: wrap;
   }
   .history_label_text {
     font-size: 0.875rem;
@@ -4951,6 +4988,12 @@ input.file_origin::file-selector-button {
   .data_price_unit {
     font-size: 0.8125rem;
   }
+  .hdata_item.has_keyvalue {
+    gap: 0.5rem 1.25rem;
+  }
+  .hdata_value.message_value .current_textbox {
+    padding: 0.3125rem 0.625rem;
+  }
 }
 @media (max-width: 359px) {
   .step_process_bullet,
@@ -5002,12 +5045,12 @@ input.file_origin::file-selector-button {
 
 .screen_form_cell {
   display: table-cell;
-  vertical-align: middle;
+  vertical-align: top;
   padding-bottom: 0.4375rem;
 }
 .screen_form_cell.define_formth {
   width: 1px;
-  padding-right: 0.9375rem;
+  padding: 0.9375rem 0.9375rem 0 0;
 }
 .sform_label {
   display: inline-block;
@@ -5028,6 +5071,18 @@ input.file_origin::file-selector-button {
 }
 .sform_inwrap .btn_inline_ico:last-of-type {
   margin-right: 0.9375rem;
+}
+.sform_inwrap.warn_wrap {
+  border: 2px solid #ff0000;
+  color: #ff0000;
+}
+
+.warn_message {
+  margin: 0.625rem 0;
+  text-align: right;
+  color: #ff0000;
+  font-size: 0.875rem;
+  display: none;
 }
 
 input.sform_input {
@@ -5176,6 +5231,10 @@ input.sform_input {
   .btn_formsubmit {
     font-size: 1rem;
     margin-bottom: 0;
+  }
+  .warn_message {
+    margin: 0.3125rem 0;
+    font-size: 0.75rem;
   }
 }
 /* toggle list */

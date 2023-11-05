@@ -80,7 +80,10 @@
 								</tr>
 								<tr>
 									<th><span class="mid_form_label important">초대코드</span></th>
-									<td><input type="text" class="form_input"></td>
+									<td id="form_case">
+										<input type="text" class="form_input">
+										<p class="warn_message">인풋메시지인풋메시지인풋메시지인풋메시지인풋메시지인풋메시지인풋메시지인풋메시지인풋메시지인풋메시지</p>
+									</td>
 								</tr>
 								<tr>
 									<th><span class="mid_form_label">이메일</span></th>
@@ -109,7 +112,15 @@
 			</div>
 		</div>
 		<script>
-
+			// 퍼블확인용
+			let url = window.location.href.split('?')[1];
+			let url_2 = url !== undefined ? url.split('#')[0] : null;
+			if (url_2 === "warn") {
+				document.querySelector("#form_case").querySelector(".form_input").classList.add("warn_type");
+				document.querySelector("#form_case").querySelector(".form_input").value = "test12345";
+				document.querySelector("#form_case").querySelector(".warn_message").style.display = "block";
+				document.querySelector("#form_case").querySelector(".mobile_place_para").style.display = "none";
+			}
 		</script>
 		<footer class="footer_wrap">
 			<div class="footer_pix">

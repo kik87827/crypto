@@ -211,8 +211,9 @@
 											<div class="input_comp_cols"><input type="text" class="input_comp_item" value="1000"></div>
 											<div class="placeholder_comp_cols"><p class="input_comp_placeholder">6자리 숫자만 공백 없이 입력해 주세요</p></div>
 										</div> -->
-										<div class="form_input_group">
+										<div class="form_input_group" id="form_case">
 											<input type="password" class="form_input reverse_place" name="pc_only_placeholder" placeholder="6자리 숫자만 공백 없이 입력해 주세요" value="1000">
+											<p class="warn_message">인풋텍스트 하단메시지</p>
 											<p class="mobile_place_para">6자리 숫자만 공백 없이 입력해 주세요</p>
 										</div>
 									</div>
@@ -251,6 +252,17 @@
 			window.addEventListener("load", () => {
 				maxHeightFunc([".rendar_fieldset_row"]);
 			});
+
+			// 퍼블확인용
+			let url = window.location.href.split('?')[1];
+			let url_2 = url !== undefined ? url.split('#')[0] : null;
+			if (url_2 === "warn") {
+				document.querySelector("#form_case").querySelector(".form_input").classList.add("warn_type");
+				document.querySelector("#form_case").querySelector(".form_input").value = "test12345";
+				document.querySelector("#form_case").querySelector(".warn_message").style.display = "block";
+				document.querySelector("#form_case").querySelector(".mobile_place_para").style.display = "none";
+				maxHeightFunc([".rendar_fieldset_row"]);
+			}
 		</script>
 		<footer class="footer_wrap">
 			<div class="footer_pix">

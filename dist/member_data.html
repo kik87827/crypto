@@ -241,7 +241,7 @@
 									</tr>
 									<tr>
 										<th><span class="sc_form_label">결제 비밀번호</span></th>
-										<td>
+										<td id="form_case">
 											<div class="inline_form_group">
 												<div class="inline_form_cols define_long">
 													<input type="text" class="form_input reverse_place place_small" name="pc_only_placeholder" placeholder="영문자, 숫자, 특수문자 8~20개 혼용 (~!@#^_*)">
@@ -250,6 +250,7 @@
 													<a href="#" class="btn_inline_control">변경하기</a>
 												</div>
 											</div>
+											<p class="warn_message align_left">인풋메시지인풋메시지인풋메시지인풋메시지인풋메시지인풋메시지인풋메시지인풋메시지인풋메시지인풋메시지</p>
 											<p class="mobile_place_para">영문자, 숫자, 특수문자 8~20개 혼용 (~!@#^_*)</p>
 										</td>
 									</tr>
@@ -261,6 +262,17 @@
 			</div>
 			<!-- // sub contents -->
 		</section>
+		<script>
+			// 퍼블확인용
+			let url = window.location.href.split('?')[1];
+			let url_2 = url !== undefined ? url.split('#')[0] : null;
+			if (url_2 === "warn") {
+				document.querySelector("#form_case").querySelector(".form_input").classList.add("warn_type");
+				document.querySelector("#form_case").querySelector(".form_input").value = "test12345";
+				document.querySelector("#form_case").querySelector(".warn_message").style.display = "block";
+				document.querySelector("#form_case").querySelector(".mobile_place_para").style.display = "none";
+			}
+		</script>
 		<footer class="footer_wrap">
 			<div class="footer_pix">
 				<div class="footer_item_group">
