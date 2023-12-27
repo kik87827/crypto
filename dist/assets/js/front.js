@@ -97,7 +97,7 @@ function layoutFunc() {
           const thisItemParent = thisItem.closest(".hgroup_util_toggle_item");
           const thisItemTargetText = thisItemParent.querySelector(".hgroup_util_text");
           thisItemParent.classList.remove("active");
-          thisItemTargetText.textContent = thisItem.textContent;
+          thisItemTargetText.textContent = thisItem.value;
         });
       });
       document.addEventListener("click", function(e) {

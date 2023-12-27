@@ -76,9 +76,10 @@ body ::-webkit-scrollbar-track {background-color: #fff;border-radius: rem(10);bo
     }
 }
 
-.hgroup_option_item{display:block;padding:rem(7);font-size:rem(14);color:#333;
+.hgroup_option_item{display:block;padding:rem(7);font-size:rem(14);color:#333; appearance: none; cursor: pointer;
     &:hover{background:#ebebeb;}
 }
+input[type='submit'].hgroup_option_item{background:none;width:100%;font-family: 'Noto Sans KR',Dotum,verdana,sans-serif;}
 
 
 .btn_hgroup_menu{
